@@ -36,15 +36,14 @@ class OffenseClassifier:
         self.model_dir = model_dir
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
-        
+
         self.load_or_train_model()
 
-        
     def load_tokenizer(self):
         if self.tokenizer is None:
             model_name = "offense_classifier_end_to_end/distilbert_base_uncased/"
             self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
-        
+
     def prepare_data(self):
         if self.encoded_dataset is not None:
             return
@@ -77,15 +76,14 @@ class OffenseClassifier:
             encoded_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
             encoded_dataset.save_to_disk(cache_path)
         self.encoded_dataset = encoded_dataset
-        
-        
+
     def load_or_train_model(self):
         if self.model_loaded:
             return
-        
+
         self.load_tokenizer()
         self.prepare_data()
-        
+
         # Check if a saved model exists
         if os.path.exists(self.model_dir):
             print("Loading the pre-trained model...")
@@ -93,16 +91,12 @@ class OffenseClassifier:
         else:
             print("No pre-trained model found. Starting training from scratch...")
             self.model = DistilBertForSequenceClassification.from_pretrained(
-                self.tokenizer.name_or_path, 
+                self.tokenizer.name_or_path,
                 num_labels=len(self.label_mapping)
             ).to(self.device)
             self.train_model(self.encoded_dataset)
             # Evaluate the model
             self.evaluate_model(self.encoded_dataset['test'])
-        
-        
-        
-        
 
     def train_model(self, encoded_dataset):
         """
@@ -171,7 +165,7 @@ class OffenseClassifier:
         dictionary = {
             'Public Order': ["Underage Possession Of Alcohol", "Resisting Arrest", "Gambling"],
             'Traffic': ["Traffic Driving", "Traffic Vehicle", "Traffic Paperwork"]
-            }
+        }
         for key, categories in dictionary.items():
             for category in categories:
                 if input_category.lower() == category.lower():
