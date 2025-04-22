@@ -10,16 +10,20 @@ categories = {
         "distributing {drug}",
         "distribution of {drug}",
         "{charged_with} drug trafficking",
+        "{charged_with} dealing in {drug}",
+        "{charged_with} {drug} dealing",
         "trafficking {drug}",
         "transporting {drug}",
         "selling of {drug}",
         "{drug} for sale",
         "{possessing} {drug} for sale",
         "{charged_with} {possessing} {drug} for sale",
-        "possession of {drug} with intent to sell",
-        "possess {drug} intention to distribute",
-        "carrying {drug} with intention to traffic",
-        "transport {drug} intent to sell",
+        "possession of {drug} with intent to {distribute}",
+        "possession of {drug} with intent",
+        "possess {drug} intention to {distribute}",
+        "carrying {drug} with intention to {distribute}",
+        "{possessing} {drug} with purpose to {distribute}",
+        "transport {drug} intent to {distribute}",
         "{charged_with} transport of {drug}",
         "selling {drug} by the {place}",
         "carrying {drug} for sale at a {place}",
@@ -901,7 +905,8 @@ placeholder_options = {
     "resisting": ["resisting", "resisting", "obstructing", "having resisted", "having obstructed", "hindering",
                   "having hindered", "opposing", "refusing"],
     "officer": ["police officer", "law enforcement officer", "law enforcement agent", "police agent", "officer"],
-    "improper" : ["improper", "illegal", "unsafe", "unsatisfactory", "unlawful", "prohibited"]
+    "improper": ["improper", "illegal", "unsafe", "unsatisfactory", "unlawful", "prohibited"],
+    "distribute": ["distribute", "sell", "deal", "deliver", "trade", "traffic"]
 }
 
 
