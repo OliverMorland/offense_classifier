@@ -199,15 +199,18 @@ categories = {
         "{improper} control of dog",
         "shouting obscenities and disturbing the peace in public",
         "engaged in a loud argument in a public {place}",
-        "created a disturbance by yelling in a busy street",
+        "created a disturbance by yelling in a busy {place}",
         "disorderly conduct",
         "{charged_with} disorderly conduct on public transport",
         "{charged_with} interfering with an emergency phone call",
-        "interfering with official acts by an {officer}",
-        "loitering and prowling",
-        "inducing panic",
-        "molesting passerbys",
+        "{improper} loitering and prowling",
+        "{charged_with} inducing panic",
+        "{charged_with} molesting passerby",
+        "{improper} harassment of a {victim}",
+        "{charged_with} harassment in a public place",
         "{charged_with} causing a public nuisance",
+        "{failure to} pay fare on public transport",
+        "{failure to} to pay transportation fare",
         "causing a public disturbance",
         "public order offense",
         "disturbing the public order",
@@ -219,8 +222,6 @@ categories = {
         "brawling at {place} causing panic among bystanders",
         "playing extremely loud music near {place}, disturbing residents",
         "disrupting a public event with unruly behavior",
-        "refusing to comply with police instructions in a crowded place",
-        "{failure to} comply with {officer} instructions",
         "aggressively confronting strangers in the street, disturbing public peace"
     ],
     "Rioting": [
@@ -740,7 +741,7 @@ categories = {
         "{charged_with} having resisted arrest",
         "resisted capture at {place} following arrest",
         "{hit} an officer who was arresting them",
-        "{charged_with} having {hit} a {officer} during arrest",
+        "{charged_with} having {hit} a {officer} during arrest"
     ],
     "Obstructing Justice": [
         "{failure to} identify to an {officer}",
@@ -757,8 +758,11 @@ categories = {
         "{improper} tampering with evidence at the {place}",
         "{charged_with} tampering with official records",
         "destroyed evidence",
+        "{charged_with} obstructing the legal process",
         "{charged_with} destruction of evidence",
-        "tampered with evidence while an {officer} was investigating"
+        "tampered with evidence while an {officer} was investigating",
+        "{failure to} comply with {officer} instructions",
+        "{charged_with} interfering with official acts by an {officer}"
     ],
     "Traffic Driving": [
         "speeding near a {place}",
@@ -792,8 +796,7 @@ categories = {
         "{failure to} control a {motor_vehicle}",
         "{motor_vehicle} operator failed to control",
         "an open container was found in the {motor_vehicle}",
-        "{charged_with} operating a {motor_vehicle} with an open container",
-
+        "{charged_with} operating a {motor_vehicle} with an open container"
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
