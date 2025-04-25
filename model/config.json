@@ -46,7 +46,8 @@
     "34": "LABEL_34",
     "35": "LABEL_35",
     "36": "LABEL_36",
-    "37": "LABEL_37"
+    "37": "LABEL_37",
+    "38": "LABEL_38"
   },
   "initializer_range": 0.02,
   "label2id": {
@@ -82,6 +83,7 @@
     "LABEL_35": 35,
     "LABEL_36": 36,
     "LABEL_37": 37,
+    "LABEL_38": 38,
     "LABEL_4": 4,
     "LABEL_5": 5,
     "LABEL_6": 6,

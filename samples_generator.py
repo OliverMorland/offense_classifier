@@ -676,6 +676,7 @@ categories = {
         "fraudulently used a stolen debit card to make a purchase",
         "{charged_with} retail fraud",
         "{charged_with} theft by check of a {victim}",
+        "theft of check",
         "{charged_with} theft of check of a {victim}",
         "{charged_with} {improper} theft of identity",
         "{severe} identity theft",
@@ -983,6 +984,8 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
             for _ in range(samples_per_category):
                 template = random.choice(templates)
                 text = replace_placeholders(template)
+                if "}" in text or "{" in text:
+                    print(f"Warning: Placeholder not replaced in template: {template}")
                 writer.writerow([text, label])
 
 
