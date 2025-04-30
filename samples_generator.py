@@ -285,7 +285,9 @@ categories = {
         "attempted to bring {improper} items into a {prison}",
         "caught with {improper} items inside a {prison}",
         "attempted to introduce {improper} items into a {prison}",
-        "caught with {improper} items inside a {prison}"
+        "caught with {improper} items inside a {prison}",
+        "smuggling {improper} items into a {prison}",
+        "smuggling contraband into a {prison}"
     ],
     "Gambling": [
         "{charged_with} illegal gambling near a {place}",
