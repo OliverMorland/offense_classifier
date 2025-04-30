@@ -272,22 +272,37 @@ categories = {
         "found {minor} intoxicated near the {place} with open containers",
         "caught a {minor} carrying multiple bottles of alcohol in a backpack"
     ],
+    "Public Institution Violation": [
+        "{charged_with} introducing contraband into a {prison}",
+        "{possessing} contraband in a {prison}",
+        "{possessing} a prohibited objects in a {prison}",
+        "entry into {prison} with {improper} contraband",
+        "intending to {distribute} {improper} items in a {prison}",
+        "{prison} resident smuggled {improper} items",
+        "{charged_with} {possessing} of {improper} items in a {prison}",
+        "keeping a {improper} phone while residing at a {prison}",
+        "{possessing} contraband while in a {prison}",
+        "attempted to bring {improper} items into a {prison}",
+        "caught with {improper} items inside a {prison}",
+        "attempted to introduce {improper} items into a {prison}",
+        "caught with {improper} items inside a {prison}"
+    ],
     "Gambling": [
         "{charged_with} illegal gambling near a {place}",
         "engaged in gambling at the {place}",
-        "unauthorized gambling",
+        "{improper} gambling",
         "gambling",
-        "illegal wagering while playing cards at {place}",
-        "{charged_with} unauthorized betting",
-        "{charged_with} operating an illegal gambling den",
+        "{improper} wagering while playing cards at {place}",
+        "{charged_with} {improper} betting",
+        "{charged_with} operating an {improper} gambling den",
         "participating in high-stakes betting {without} permission",
         "involved in an underground gambling ring {without} required permits",
         "detained for organizing illicit gambling events at {place}",
-        "suspected of running unauthorized gambling activities in {place}",
+        "suspected of running {improper} gambling activities in {place}",
         "arrested for engaging in covert gambling operations",
-        "illegal betting schemes at {place}",
+        "{improper} betting schemes at {place}",
         "operating a secret gambling network in {place}",
-        "implicated in unauthorized high-roller gambling events at {place}",
+        "implicated in {improper} high-roller gambling events at {place}",
         "witnessed at a clandestine gambling club in {place}"
     ],
     # "All Other Offenses": [
@@ -955,7 +970,8 @@ placeholder_options = {
     "improper": ["improper", "illegal", "unsafe", "unsatisfactory", "unlawful", "prohibited"],
     "distribute": ["distribute", "sell", "deal", "deliver", "trade", "traffic"],
     "failure to": ["failure to", "did not", "failed to", "neglected to", "omitted to"],
-    "assault": ["assault", "battery", "assault"]
+    "assault": ["assault", "battery", "assault"],
+    "prison": ["prison", "jail", "detention center", "correctional facility", "penal facility"]
 }
 
 

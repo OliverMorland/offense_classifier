@@ -163,7 +163,7 @@ class OffenseClassifier:
 
     def funnel_category(self, input_category):
         dictionary = {
-            'Public Order': ["Underage Possession Of Alcohol", "Resisting Arrest", "Gambling", "Obstructing Justice"],
+            'Public Order': ["Underage Possession Of Alcohol", "Resisting Arrest", "Gambling", "Obstructing Justice", "Public Institution Violation"],
             'Traffic': ["Traffic Driving", "Traffic Vehicle", "Traffic Paperwork"]
         }
         for key, categories in dictionary.items():
