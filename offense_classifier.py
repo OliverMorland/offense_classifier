@@ -172,10 +172,18 @@ class OffenseClassifier:
                     return key
         return input_category
 
+    def should_classify_to_all_other_offense(self, input_text):
+        clues = ["parties", "habitual violator", "habitual offender"]
+        for clue in clues:
+            if clue in input_text.lower():
+                return True
+
     def classify_text(self, text):
         """
         Classify a single text string.
         """
+        if self.should_classify_to_all_other_offense(text):
+            return "All Other Offenses", 0
         inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=128).to(
             self.device)
         with torch.no_grad():
