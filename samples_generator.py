@@ -672,7 +672,8 @@ categories = {
     "Weapons Offense": [
         "{possessing} a firearm {without} a permit",
         "possessed a {weapon} illegally",
-        "recklessly wielding of a {weapon}",
+        "{improper} possession of a regulated {firearm}",
+        "recklessly wielding a {weapon}",
         "regulated {weapon} illegal possession",
         "{improper} possession of a regulated {weapon}",
         "{charged_with} {possessing} a {weapon}",
@@ -697,7 +698,7 @@ categories = {
         "felon found in possession of a restricted {weapon}",
         "{charged_with} carrying a {weapon} in a prohibited area",
         "{charged_with} improper storage of a {weapon}, violating safety laws",
-        "attempted to purchase a firearm illegally",
+        "attempted to purchase a {firearm} illegally",
         "{charged_with} possession of high-capacity magazines in violation of the law",
         "{charged_with} failure to report a lost or stolen {weapon}",
         "{charged_with} unlawful sale of ammunition"
@@ -963,6 +964,7 @@ categories = {
         "driving in a {reckless} way",
         "{charged_with} {reckless} driving",
         "{reckless} operation of a {motor_vehicle}",
+        "{charged_with} following {motor_vehicle} too closely",
         "traffic offense",
         "{charged_with} driving past red light by the {place}",
         "{charged_with} failure to stop at a stop sign",
