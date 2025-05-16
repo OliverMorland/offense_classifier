@@ -31,7 +31,9 @@ categories = {
         "planning to sell {drug} for profit",
         "{charged_with} illegally smuggling {drug} to sell on market",
         "{charged_with} manufacturing {drug}",
-        "{charged_with} making {drug} for sale"
+        "{charged_with} making {drug} for sale",
+        "{conspiracy_to} {distribute} {drug} onto grounds of a {prison}",
+        "{improper} conveyance of {drug} in a {prison}",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -392,6 +394,9 @@ categories = {
         "smuggling contraband into a {prison}",
         "{conspiracy_to} introduce contraband into a {prison}",
         "{conspiracy_to} smuggle {improper} items into a {prison}",
+        "{improper} distribution of items in a {prison} which are not drugs",
+        "selling {improper} contraband in a {prison} but not drugs",
+        "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
     ],
     "Illicit Business": [
         "{charged_with} illegal gambling near a {place}",
