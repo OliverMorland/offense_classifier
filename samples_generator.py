@@ -68,12 +68,14 @@ categories = {
         "{possessing} drug paraphernalia",
         "manufacturing drug paraphernalia",
         "using drug paraphernalia",
+        "{drug} paraphernalia",
         "using drug paraphernalia at a {place}",
         "{charged_with} using drug paraphernalia, misdemeanor",
         "{possessing} a injection syringe",
-        "using materials to make drugs",
+        "using materials that make drugs",
         "{charged_with} possessing paraphernalia for drugs",
-        "{charged_with} unspecified {drug} offense"
+        "{charged_with} unspecified {drug} offense",
+        "{charged_with} a controlled substance violation"
     ],
     "Unspecified Manslaughter": [
         "killed another person in an incident that remains unclear",
@@ -716,7 +718,8 @@ categories = {
         "{charged_with} failure to report a lost or stolen {weapon}",
         "{charged_with} unlawful sale of ammunition"
         "{charged_with} {improper} sale of ammunition",
-        "{improper} weapons trafficking"
+        "{improper} weapons trafficking",
+        "{conspiracy_to} commit misconduct with weapons",
     ],
     "Robbery": [
         "{severe} robbery",
@@ -832,6 +835,7 @@ categories = {
         "operated a credit card scam at {place}",
         "fraudulently used a stolen debit card to make a purchase",
         "{charged_with} retail fraud",
+        "{charged_with} mail fraud",
         "{charged_with} criminal conversion of {stolen_property}",
         "{charged_with} theft by check of a {victim}",
         "theft of check",
@@ -968,7 +972,7 @@ categories = {
     ],
     "Traffic Driving": [
         "speeding near a {place}",
-        "operating a {motor_vehicle} in a {improper} manner"
+        "operating a {motor_vehicle} in a {improper} manner",
         "driving above the speed limit",
         "driving while {improper}",
         "{charged_with} speeding",
@@ -1000,7 +1004,9 @@ categories = {
         "operators and chauffeurs must have be licensed",
         "{failure to} control a {motor_vehicle}",
         "{motor_vehicle} operator failed to control",
-        "{motor_vehicle} nuisance"
+        "{motor_vehicle} nuisance",
+        "{improper} violation of the light law",
+        "{failure to} stop at a red light",
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -1033,6 +1039,8 @@ categories = {
         "driving {without} insurance",
         "{without} insurance",
         "{charged_with} driving while barred",
+        "driving while license {invalid} due to having being {under_the_influence}",
+        "driving license {invalid} for being {under_the_influence}",
         "barred from operating a {motor_vehicle}",
         "unlicensed operation of a {motor_vehicle}",
         "driving with {invalid} license",
