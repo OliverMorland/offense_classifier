@@ -81,6 +81,7 @@ categories = {
         "{severe} intimidation",
         "intimidation of a {victim}",
         "intimidating a {victim}",
+        "{charged_with} intimidating a {victim} who is not a witness",
         "intimidating a {victim} {without} a financial motive",
         "threatening a {victim} to instill fear",
         "used force or threats to intimidate a victim",
@@ -146,6 +147,7 @@ categories = {
     ],
     "Burglary": [
         "{charged_with} burglary",
+        "{charged_with} breaking and entering",
         "broke into a house and stole a {stolen_property}",
         "forced entry into a building to take {stolen_property}",
         "caught breaking into a private property to steal {stolen_property}",
@@ -169,6 +171,7 @@ categories = {
     "Larceny/Motor Vehicle Theft": [
         "{motor_vehicle} theft",
         "petty theft",
+        "{charged_with} theft",
         "{charged_with} larceny",
         "{possessing} stolen {stolen_property}",
         "{possessing} a stolen {motor_vehicle}",
@@ -202,7 +205,9 @@ categories = {
         "{improper} appropriation of {stolen_property}",
         "{charged_with} taking of property",
         "{charged_with} carjacking",
-        "{charged_with} carjacking without a weapon"
+        "{charged_with} carjacking without a weapon",
+        "{charged_with} theft {without} having deceived the person",
+        "{charged_with} theft but no fraud"
     ],
     "Other Property": [
         "vandalized a private property by spray painting",
@@ -796,6 +801,7 @@ categories = {
         "operated a credit card scam at {place}",
         "fraudulently used a stolen debit card to make a purchase",
         "{charged_with} retail fraud",
+        "{charged_with} criminal conversion of {stolen_property}",
         "{charged_with} theft by check of a {victim}",
         "theft of check",
         "{charged_with} theft of check of a {victim}",
@@ -804,11 +810,13 @@ categories = {
         "{charged_with} using another person's {identification} for criminal purposes",
         "{improper} use of another person's {identification}",
         "{improper} use of a {victim}'s {identification}",
+        "{improper} use of false {identification}",
         "use of another person's {identification} without permission",
         "{charged_with} stealing of {identification} for {improper} purpose",
         "fraudulent use of someone else's {identification}",
         "{charged_with} fraudulent use of a telephone",
         "{possessing} stolen {identification} that is not their own",
+        "{possessing} {identification} to commit forgery",
         "{possessing} forged instruments",
         "{possessing} forged bank bills",
         "{improper} forgery of documents",
@@ -819,8 +827,12 @@ categories = {
         "{charged_with} making false statement to purchase a firearm",
         "{charged_with} falsifying statement to purchase a {motor_vehicle}",
         "{charged_with} making a false statement for a purchase",
+        "{charged_with} theft by deception",
+        "stealing from a {victim} by deceiving them",
+        "{charged_with} theft using deceptive means"
     ],
     "Embezzlement": [
+        "{charged_with} embezzlement",
         "stole funds from a {victim}",
         "misappropriated company resources for personal use",
         "embezzled money from a non-profit organization",
