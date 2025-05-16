@@ -173,7 +173,9 @@ class OffenseClassifier:
         return input_category
 
     def should_classify_to_all_other_offense(self, input_text):
-        clues = ["parties", "habitual violator", "habitual offender"]
+        clues = ["parties", "habitual violator", "habitual offender",
+                 "expulsion", "attempt to commit an offense",
+                 "unknown offense"]
         for clue in clues:
             if clue in input_text.lower():
                 return True
