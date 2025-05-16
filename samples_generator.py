@@ -13,6 +13,7 @@ categories = {
         "{charged_with} dealing in {drug}",
         "{charged_with} {drug} dealing",
         "trafficking {drug}",
+        "{conspiracy_to} traffic {drug}",
         "transporting {drug}",
         "selling of {drug}",
         "{drug} for sale",
@@ -91,8 +92,9 @@ categories = {
         "{charged_with} blackmailing {without} financial gain involved",
         "using threatening language to {family_member}",
         "{charged_with} making threats to an individual",
-        "{charged_with} menacing behavior towards a {victim} with credible threat of violence"
-        "{charged_with} threatening violence"
+        "{charged_with} menacing behavior towards a {victim} with credible threat of violence",
+        "{charged_with} threatening violence",
+        "{conspiracy_to} intimidate a {victim}",
     ],
     "Intimidating a Witness": [
         "{charged_with} intimidating a witness",
@@ -106,6 +108,7 @@ categories = {
         "intimidating a witness",
         "{charged_with} witness intimidation",
         "threatening victim to affect testimony",
+        "{conspiracy_to} intimidate a witness",
         "pressured a witness to change their statement",
         "warned a witness with harm if they spoke in court",
         "attempted to bribe a witness to remain silent",
@@ -123,6 +126,7 @@ categories = {
     ],
     "Extortion": [
         "{charged_with} extortion",
+        "{conspiracy_to} extort",
         "{severe} extortion",
         "{improper} extortion",
         "extorting a {victim}",
@@ -147,6 +151,7 @@ categories = {
     ],
     "Burglary": [
         "{charged_with} burglary",
+        "{conspiracy_to} commit burglary",
         "{charged_with} breaking and entering",
         "broke into a house and stole a {stolen_property}",
         "forced entry into a building to take {stolen_property}",
@@ -170,6 +175,7 @@ categories = {
     ],
     "Larceny/Motor Vehicle Theft": [
         "{motor_vehicle} theft",
+        "{conspiracy_to} commit larceny",
         "petty theft",
         "{charged_with} theft",
         "{charged_with} larceny",
@@ -196,6 +202,7 @@ categories = {
         "took a package from someone's porch {without} permission",
         "{charged_with} petty theft after taking a bicycle from a park",
         "{charged_with} theft of property worth $100 in value",
+        "{charged_with} theft of services",
         "retail theft of property worth $50 in value",
         "{charged_with} unauthorized use of a {motor_vehicle}",
         "operating a {motor_vehicle} without the owner's permission",
@@ -375,7 +382,9 @@ categories = {
         "attempted to introduce {improper} items into a {prison}",
         "caught with {improper} items inside a {prison}",
         "smuggling {improper} items into a {prison}",
-        "smuggling contraband into a {prison}"
+        "smuggling contraband into a {prison}",
+        "{conspiracy_to} introduce contraband into a {prison}",
+        "{conspiracy_to} smuggle {improper} items into a {prison}",
     ],
     "Illicit Business": [
         "{charged_with} illegal gambling near a {place}",
@@ -402,6 +411,7 @@ categories = {
         "{improper} pimping",
         "{charged_with} operating a prostitution business",
         "{charged_with} operating a {improper} brothel"
+        "{conspiracy_to} sell immoral services",
     ],
     # "All Other Offenses": [
     #     "failure to pay fare",
@@ -430,6 +440,7 @@ categories = {
         "committed premeditated murder",
         "murdered someone in cold blood",
         "murder",
+        "{conspiracy_to} commit murder",
         "premeditated killing",
         "planned killing",
         "murdered {victim}",
@@ -514,26 +525,28 @@ categories = {
         "neglected standard safety protocols, causing fatal outcome"
     ],
     "Kidnapping": [
-        "abducted a person against their will",
+        "false imprisonment of a {victim}",
+        "false imprisonment of a {minor}",
+        "{severe} kidnap",
+        "{improper} imprisonment",
+        "{improper} confinement",
+        "{improper} abduction",
+        "{charged_with} abducting a {victim} against their will",
         "held someone hostage for ransom",
-        "took a person without consent for illegal purposes",
-        "abuduction",
-        "kidnapping",
+        "{charged_with} abduction",
+        "{charged_with} kidnapping",
         "abducting an individual",
         "{charged_with} kidnapping and hiding a person",
         "kidnap of a person",
         "abducting an individual",
-        "lured a {victim} away with deceptive tactics",
         "unlawful confinement of a {victim} in a secret location",
         "forcing a {victim} into a {motor_vehicle} against their will",
         "seizing control of someone's movements without permission",
-        "detaining a {victim} to demand money",
+        "detaining a {victim}",
         "taking a {victim} under threat from the {place}",
-        "illegally transporting {victim} across state lines",
         "coercing {victim} into captivity",
         "snatching a {victim} from public space",
         "detaining a {victim} for illegal reasons",
-        "threatened a {victim} with a {weapon} during abduction"
     ],
     "Child Abuse": [
         "child abuse",
@@ -583,6 +596,7 @@ categories = {
         "texting a {minor} for immoral reasons",
         "having sent texts to a {minor} for sexual reasons",
         "{charged_with} having communicated with a {minor} with improper intentions",
+        "{conspiracy_to} commit rape"
     ],
     "Aggravated Assault": [
         "aggravated assault",
@@ -623,6 +637,7 @@ categories = {
         "{assault} {without} bodily harm",
         "{charged_with} {assault} {without} bodily injury",
         "{charged_with} domestic abuse",
+        "{assault} on {family_member}",
         "domestic {assault}",
         "domestic {assault} {without} injury caused",
         "{assault} on a {family_member} {without} body injury",
@@ -651,7 +666,6 @@ categories = {
         "{hit} {victim} causing {light} discomfort but no severe harm",
         "minor altercation with {victim} resulting in {light} scratch",
         "verbal dispute escalated to {hit} but no major injuries occurred",
-        "shoved a bystander but caused no medical issues",
         "{charged_with} simple {assault} after pushing {victim} at {place}",
         "argument led to a {fight} resulting in minor injuries only"
     ],
@@ -792,6 +806,9 @@ categories = {
         "{improper} use of payment card under $1,500",
         "{charged_with} fraudulent use of a credit card",
         "fraud",
+        "{conspiracy_to} impersonate another",
+        "{improper} impersonation",
+        "{conspiracy_to} commit fraud",
         "fraudulent use of a card",
         "defrauded a {victim}",
         "fabricated insurance claims for profit",
@@ -833,7 +850,9 @@ categories = {
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
-        "stole funds from a {victim}",
+        "{improper} embezzlement",
+        "{charged_with} {improper} use of funds trusted to them",
+        "{charged_with} misappropriation of funds",
         "misappropriated company resources for personal use",
         "embezzled money from a non-profit organization",
         "embezzled funds",
@@ -862,6 +881,7 @@ categories = {
         "broke free from {prison} or detention",
         "{charged_with} evading arrest or detention",
         "escape/flight",
+        "{charged_with} eluding",
         "{charged_with} escape or flight",
         "{improper} escape from a {prison}",
         "{improper} fleeing from {officer} while being detained",
@@ -959,7 +979,8 @@ categories = {
         "operating a {motor_vehicle} whilst texting on a cell phone",
         "operators and chauffeurs must have be licensed",
         "{failure to} control a {motor_vehicle}",
-        "{motor_vehicle} operator failed to control"
+        "{motor_vehicle} operator failed to control",
+        "{motor_vehicle} nuisance"
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -986,6 +1007,7 @@ categories = {
     ],
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
+        "{charged_with} driving under suspension",
         "driving on {invalid} license and privilege",
         "driving {without} a valid license",
         "driving {without} insurance",
@@ -1049,12 +1071,15 @@ categories = {
         "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger"
     ],
     "Immigration": [
+        "{charged_with} reentry after deportation",
+        "{improper} reentry of removed alien",
+        "{improper} reentry",
         "entered the country illegally",
         "violated immigration laws by overstaying a visa",
         "assisted someone in evading immigration authorities",
         "{improper} entry without inspection at the border",
         "{improper} entry into the usa",
-        "improper entry into the united states",
+        "{improper} entry into the united states",
         "transporting {improper} aliens",
         "{improper} alien",
         "smuggling immigrants",
@@ -1062,10 +1087,10 @@ categories = {
         "{improper} crossing at border",
         "aided {improper} entry into the usa",
         "evaded border security",
+        "{charged_with} evasion of border {officer}"
         "smuggling of migrants",
         "{improper} migration",
         "crossed border without proper documentation",
-        "obtained entry to country using forged travel documents",
         "harbored undocumented individuals at a {place}",
         "smuggled migrants across the united states border",
         "arrived at port of entry with an invalid visa"
@@ -1078,7 +1103,8 @@ placeholder_options = {
     "light": ["light", "minor", "negligible", "small", "tiny", "insignificant", "mild"],
     "fight": ["fight", "altercation", "heated argument", "heated exchange", "argument", "scuffle"],
     "inflicted": ["inflicted", "caused", "imposed", "resulted in", "brought about"],
-    "family_member": ["spouse", "family member", "wife", "husband", "girlfriend", "brother", "mother"],
+    "family_member": ["spouse", "ex spouse", "family member", "wife", "husband", "girlfriend",
+                      "sister", "mother"],
     "raped": ["raped", "sexually assaulted", "forcing sex on", "assaulting sexually"],
     "strangled": ["choked", "strangled", "beat", "attacked", "assaulted", "stabbed", "punched unconscious"],
     "severe": ["severe", "aggravated", "serious", "major", "life-threatening", "extreme", "grievous"],
@@ -1088,6 +1114,7 @@ placeholder_options = {
     "under_the_influence": ["under the influence of alcohol", "intoxicated", "drunk", "high",
                             "under the influence", "in an intoxicated state", "impaired"],
     "charged_with": ["charged with", "arrested for", "accused of", "indicted for", "under suspicion of"],
+    "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to"],
     "without": ["without", "not with", "absent of", "lacking"],
     "reckless": ["dangerous", "careless", "negligent", "reckless", "irresponsible", "unsafe"],
     "invalid": ["suspended", "invalid", "expired", "revoked", "fake", "canceled"],
