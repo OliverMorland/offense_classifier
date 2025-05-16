@@ -54,7 +54,8 @@ categories = {
         "intoxicated by {drug} while working",
         "found at the {place} intoxicated by {drug}",
         "{possessing} {numeric_quantity} grams of {drug}",
-        "{charged_with} {drug} possession - {numeric_quantity} grams"
+        "{charged_with} {drug} possession - {numeric_quantity} grams",
+        "{drug} possession, misdemeanor",
     ],
     "Unspecified Drug Offense": [
         "possession of drug paraphernalia",
@@ -66,6 +67,7 @@ categories = {
         "manufacturing drug paraphernalia",
         "using drug paraphernalia",
         "using drug paraphernalia at a {place}",
+        "{charged_with} using drug paraphernalia, misdemeanor",
         "{possessing} a injection syringe",
         "using materials to make drugs",
         "{charged_with} possessing paraphernalia for drugs",
@@ -178,6 +180,7 @@ categories = {
         "{conspiracy_to} commit larceny",
         "petty theft",
         "{charged_with} theft",
+        "{charged_with} theft, misdemeanor",
         "{charged_with} larceny",
         "{possessing} stolen {stolen_property}",
         "{possessing} a stolen {motor_vehicle}",
@@ -642,7 +645,7 @@ categories = {
         "domestic {assault} {without} injury caused",
         "{assault} on a {family_member} {without} body injury",
         "{charged_with} domestic violence",
-        "{assault} involving {without} a {weapon}",
+        "{assault} {without} a {weapon}",
         "{assault} in the second degree",
         "{charged_with} simple {assault}",
         "{charged_with} domestic {assault}",
@@ -946,7 +949,9 @@ categories = {
         "{failure to} comply with {officer} instructions",
         "{failure to} comply",
         "{failure to} comply with an {officer}'s investigation",
-        "{charged_with} interfering with official acts by an {officer}"
+        "{charged_with} interfering with official acts by an {officer}",
+        "wasting the time of an {officer}",
+        "{charged_with} misusing a 911 call",
     ],
     "Traffic Driving": [
         "speeding near a {place}",
@@ -1071,6 +1076,8 @@ categories = {
         "{motor_vehicle} operator {possessing} an open container",
         "{motor_vehicle} operator {possessing} an alcoholic container which is not closed",
         "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger"
+        "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
+        "driving while {under_the_influence} with {family_member} in the {motor_vehicle}",
     ],
     "Immigration": [
         "{charged_with} reentry after deportation",
@@ -1124,7 +1131,7 @@ placeholder_options = {
     "drug": ["cocaine", "heroin", "marijuana", "drugs", "crack cocaine", "controlled substance",
              "meth", "methamphetamine", "illegal substance", "opioid", "cannabis", "marihuana", "controlled substanc",
              "drug", "marijana", "fentanyl", "narcotic drug"],
-    "minor": ["minor", "child", "teen", "15-year-old", "adolescent", "underage person"],
+    "minor": ["minor", "child", "teen", "15-year-old", "adolescent", "underage person", "child under 15 years of age"],
     "motor_vehicle": ["motorcycle", "car", "motor vehicle", "automobile", "truck", "vehicle", "means of conveyance",
                       "motor vehicle", "auto vehicle"],
     "vehicle_part": ["rear view mirrors", "license plate", "rear lights", "front facing beams", "booster seat",
