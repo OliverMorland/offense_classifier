@@ -430,28 +430,18 @@ categories = {
         "{charged_with} operating a {improper} brothel"
         "{conspiracy_to} sell immoral services",
     ],
-    # "All Other Offenses": [
-    #     "failure to pay fare",
-    #     "not paying fare on bus",
-    #     "failure to pay fare on train",
-    #     "not purchasing a ticket",
-    #     "jumping the ticket barrier at station",
-    #     "conspiracy second degree",
-    #     "dumping trash illegally at {place}",
-    #     "jaywalking at a busy intersection near {place}",
-    #     "littering in a prohibited area near {place}",
-    #     "smoking in a non-smoking zone at {place}",
-    #     "not following local curfew regulations",
-    #     "throwing objects from a moving vehicle",
-    #     "fishing without a valid license",
-    #     "selling goods without a permit at {place}",
-    #     "walking pets off-leash in a restricted area",
-    #     "violating a local noise ordinance in a neighborhood",
-    #     "refusing to comply with local business regulations",
-    #     "operating a business after hours without permission",
-    #     "cycling on sidewalks where prohibited",
-    #     "failing to clean up after a pet in public"
-    # ],
+    "All Other Offenses": [
+        "{conspiracy_to} commit an offense",
+        "{charged_with} committing an unspecified offense",
+        "{conspiracy_to} do something {improper}",
+        "{conspiracy_to} do a crime",
+        "{charged_with} criminal activity",
+        "offenses involving {victim}",
+        "unspecified offenses involving a {minor}",
+        "offenses involving a {family_member}",
+        "{reckless} offenses",
+        "{improper} offense",
+    ],
     "Murder": [
         "intentionally killed another person",
         "committed premeditated murder",
@@ -1223,4 +1213,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1000)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
