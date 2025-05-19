@@ -34,6 +34,7 @@ categories = {
         "{charged_with} making {drug} for sale",
         "{conspiracy_to} {distribute} {drug} onto grounds of a {prison}",
         "{improper} conveyance of {drug} in a {prison}",
+        "{prison} inmate trafficked {drug}",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -247,6 +248,7 @@ categories = {
         "criminal mischief",
         "{charged_with} hit and run while causing property damage",
         "{charged_with} hit and run while damaging property",
+        "walking away from the scene of a {motor_vehicle} accident",
         "{charged_with} leaving the scene of an accident",
         "{charged_with} leaving the scene of an accident not having caused injury",
         "{charged_with} leaving the scene after having caused property damage",
@@ -398,7 +400,7 @@ categories = {
         "{conspiracy_to} introduce contraband into a {prison}",
         "{conspiracy_to} smuggle {improper} items into a {prison}",
         "{improper} distribution of items in a {prison} which are not drugs",
-        "selling {improper} contraband in a {prison} but not drugs",
+        "selling {improper} contraband in a {prison} but not {drug}",
         "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
     ],
     "Illicit Business": [
