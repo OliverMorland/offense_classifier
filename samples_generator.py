@@ -249,10 +249,11 @@ categories = {
         "{charged_with} hit and run while causing property damage",
         "{charged_with} hit and run while damaging property",
         "walking away from the scene of a {motor_vehicle} accident",
-        "{charged_with} leaving the scene of an accident",
+        "{charged_with} departing the scene of a {motor_vehicle} accident",
         "{charged_with} leaving the scene of an accident not having caused injury",
+        "fled the scene of a crash with damage to {motor_vehicle} but no injuries",
         "{charged_with} leaving the scene after having caused property damage",
-        "leaving the scene of an accident after damaging a {motor_vehicle}",
+        "fleeing the scene of an accident after damaging a {motor_vehicle}",
         "{severe} damage to property"
     ],
     "Court Violation": [
