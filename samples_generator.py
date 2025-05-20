@@ -1141,9 +1141,9 @@ categories = {
         "{failure to} provide financial responsibility of driver",
         "operating a {motor_vehicle} without required financial responsibility",
         "financial responsibility law",
-        "driving under a {invalid} license due to {driving_under_the_influence}",
+        "driving under a {invalid} license due to driving {under_the_influence}",
         "driving under a {invalid} license due to failure to appear",
-        "{invalid} driver's license, revoked because of {driving_under_the_influence} driving",
+        "{invalid} driver's license, revoked because of {under_the_influence} driving",
     ],
     "DUI": [
         "driving under the influence of alcohol",
