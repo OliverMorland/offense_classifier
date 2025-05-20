@@ -1090,7 +1090,10 @@ categories = {
         "{charged_with} {failure to} maintain financial responsibility",
         "{failure to} provide financial responsibility of driver",
         "operating a {motor_vehicle} without required financial responsibility",
-        "financial responsibility law"
+        "financial responsibility law",
+        "driving under a {invalid} license due to {driving_under_the_influence}",
+        "driving under a {invalid} license due to failure to appear",
+        "{invalid} driver's license, revoked because of {driving_under_the_influence} driving",
     ],
     "DUI": [
         "driving under the influence of alcohol",
@@ -1100,7 +1103,6 @@ categories = {
         "{charged_with} blood alcohol content over the legal limit",
         "{motor_vehicle} operator refused to take a blood alcohol content test",
         "driving while {under_the_influence}",
-        "driving while {under_the_influence} so license was revoked",
         "{severe} driving {under_the_influence}",
         "driving while seriously {under_the_influence}",
         "operating a {motor_vehicle} while {under_the_influence}",
