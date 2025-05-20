@@ -352,7 +352,7 @@ categories = {
         "attempted to incite a riot among bystanders",
         "hurling projectiles at law enforcement in a riot",
     ],
-    "Alcohol Violation": [
+    "Underage Offense": [
         "{minor} possession of alcohol",
         "{minor} in possession of alcohol",
         "consumption of alcohol under the age limit",
@@ -373,13 +373,23 @@ categories = {
         "arrested {minor} for underage drinking near {place}",
         "found {minor} intoxicated near the {place} with open containers",
         "caught a {minor} carrying multiple bottles of alcohol in a backpack",
+        "{minor} possession of tobacco",
+        "{minor} {possessing} tobacco",
+        "{minor} smoking cigarettes",
+        "possession of tobacco by a {minor}",
+        "{charged_with} underage tobacco possession",
+    ],
+    "General Alcohol Violation": [
         "an open container was found in the {motor_vehicle}",
         "an open container is in the {motor_vehicle} but is not the driver's",
         "passenger in a {motor_vehicle} with an open container",
         "{charged_with} possession of an open container",
         "{improper} possession of an open container",
         "open container",
-        "{possessing} a container of alcohol which was not closed"
+        "{possessing} a container of alcohol which was not closed",
+        "{possessing} a container of alcohol in a {improper} place",
+        "consuming alcohol in a public {place}",
+        "{improper} {possessing} of alcohol",
     ],
     "Public Institution Violation": [
         "{charged_with} introducing contraband into a {prison}",
@@ -429,6 +439,8 @@ categories = {
         "{charged_with} operating a prostitution business",
         "{charged_with} operating a {improper} brothel"
         "{conspiracy_to} sell immoral services",
+        "{charged_with} selling alcohol without a license",
+        "{conspiracy_to} start an {improper} alcohol distribution business",
     ],
     "All Other Offenses": [
         "{conspiracy_to} commit an offense",
@@ -447,6 +459,11 @@ categories = {
         "{improper} habitual offender",
         "{improper} habitual violator",
         "{improper} repeat violator",
+        "conspiracy",
+        "second degree",
+        "third degree",
+        "first degree",
+        "unknown",
     ],
     "Murder": [
         "intentionally killed another person",
@@ -1013,8 +1030,13 @@ categories = {
         "inoperable license tag light",
         "{improper} tag",
         "license plate light not working on {motor_vehicle}",
+        "{failure to} maintain proper {motor_vehicle} operation",
         "{vehicle_part} not functioning",
         "inoperable {vehicle_part} on {motor_vehicle}",
+        "{charged_with} defective equipment in {motor_vehicle}",
+        "{motor_vehicle} {vehicle_part} was not functioning",
+        "defective {vehicle_part}",
+        "{failure to} maintain operation of {vehicle_part}",
         "{charged_with} {vehicle_part} violation",
         "{charged_with} using {invalid} plates",
         "{charged_with} display plates of another",
@@ -1030,7 +1052,7 @@ categories = {
         "booster seat violation",
         "all passengers did not have their safety belts on in the {motor_vehicle}",
         "{charged_with} not wearing a seat belt",
-        "{charged_with} failing to wear a seat belt while driving"
+        "{charged_with} failing to wear a seat belt while driving",
     ],
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
@@ -1157,7 +1179,7 @@ placeholder_options = {
     "motor_vehicle": ["motorcycle", "car", "motor vehicle", "automobile", "truck", "vehicle", "means of conveyance",
                       "motor vehicle", "auto vehicle"],
     "vehicle_part": ["rear view mirrors", "license plate", "rear lights", "front facing beams", "booster seat",
-                     "engine", "plate", "tires", "brakes", "headlights", "tail lights", "brake lights"],
+                     "engine", "plate", "tires", "brakes", "headlights", "tail lights", "brake lights", "equipment"],
     "weapon": ["knife", "firearm", "weapon", "gun", "crossbow", "rifle", "lead pipe", "handgun", "deadly weapon"],
     "firearm": ["firearm", "automatic weapon", "gun", "rifle", "handgun", "automatic rifle", "pistol"],
     "victim": ["bystander", "shopkeeper", "employee", "person", "individual", "victim", "manager"],
