@@ -59,6 +59,7 @@ categories = {
         "{possessing} {numeric_quantity} grams of {drug}",
         "{charged_with} {drug} possession - {numeric_quantity} grams",
         "{drug} possession",
+        "{charged_with} {possessing} a schedule 3 controlled substance",
     ],
     "Unspecified Drug Offense": [
         "possession of drug paraphernalia",
@@ -314,6 +315,8 @@ categories = {
         "{charged_with} causing an affray",
         "participated in a {severe} affray",
         "{charged_with} disorderly conduct on public transport",
+        "{severe} misconduct on public transportation",
+        "shouting loudly on public transport",
         "{charged_with} interfering with an emergency phone call",
         "{improper} loitering and prowling",
         "{charged_with} inducing panic",
@@ -325,7 +328,6 @@ categories = {
         "{failure to} pay fare on public transport",
         "{charged_with} participating in a street gang",
         "{improper} gang activity",
-        "{improper} mob action",
         "{failure to} to pay transportation fare",
         "causing a public disturbance",
         "public order offense",
@@ -333,13 +335,15 @@ categories = {
         "{failure to} to respect the lawful order",
         "obscene act in public",
         "indecent exposure in public",
+        "{charged_with} urinating or defecating in public",
+        "{improper} urinating in public",
         "public intoxication at the {place}",
         "causing chaos by throwing trash in public areas",
         "arguing loudly with a {victim} in a crowd",
         "brawling at {place} causing panic among bystanders",
         "playing extremely loud music near {place}, disturbing residents",
         "disrupting a public event with unruly behavior",
-        "aggressively confronting strangers in the street, disturbing public peace"
+        "aggressively confronting strangers in the street, disturbing public peace",
     ],
     "Rioting": [
         "rioting",
@@ -352,6 +356,8 @@ categories = {
         "burning down shops during a riot",
         "attempted to incite a riot among bystanders",
         "hurling projectiles at law enforcement in a riot",
+        "{improper} mob action",
+        "mobbing {officer} at a {place}",
     ],
     "Underage Offense": [
         "{minor} possession of alcohol",
@@ -453,6 +459,7 @@ categories = {
         "unspecified offenses involving a {minor}",
         "offenses involving a {family_member}",
         "offenses at a {place}",
+        "regular violator",
         "{charged_with} an unknown offense",
         "{reckless} offenses",
         "{improper} offense",
@@ -462,8 +469,9 @@ categories = {
         "{improper} repeat violator",
         "conspiracy",
         "second degree",
+        "2nd degree",
         "third degree",
-        "first degree",
+        "3rd degree",
         "unknown",
     ],
     "Murder": [
@@ -700,6 +708,8 @@ categories = {
         "verbal dispute escalated to {hit} but no major injuries occurred",
         "{charged_with} simple {assault} after pushing {victim} at {place}",
         "argument led to a {fight} resulting in minor injuries only"
+        "{assault} with no {firearm}",
+        "{charged_with} {assault} without a {weapon}",
     ],
     "Weapons Offense": [
         "{possessing} a firearm {without} a permit",
@@ -886,7 +896,10 @@ categories = {
         "{charged_with} making a false statement for a purchase",
         "{charged_with} theft by deception",
         "stealing from a {victim} by deceiving them",
-        "{charged_with} theft using deceptive means"
+        "{charged_with} theft using deceptive means",
+        "{charged_with} unauthorized use of a stolen credit card to purchase goods worth ${numeric_quantity}",
+        "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
+        "{charged_with} giving false information to obtain a refund",
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
@@ -963,6 +976,7 @@ categories = {
         "{charged_with} giving false {identification} to an {officer}",
         "gave false {identification} to an {officer}",
         "gave false {identification}",
+        "{charged_with} giving false information",
         "{failure to} give {identification}",
         "falsified their own {identification} to an {officer}",
         "{charged_with} inventing their own {identification} to an {officer}",
