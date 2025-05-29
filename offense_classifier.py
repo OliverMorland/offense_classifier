@@ -166,7 +166,7 @@ class OffenseClassifier:
             'Public Order': ["Resisting Arrest", "Illicit Business", "Obstructing Justice",
                              "Public Institution Violation", "General Alcohol Violation"],
             'Traffic': ["Traffic Driving", "Traffic Vehicle", "Traffic Paperwork"],
-            'All Other Offenses': ["Underage Offense"]
+            'All Other Offenses': ["Underage Offense", "Environmental Violation"]
         }
         for key, categories in dictionary.items():
             for category in categories:
