@@ -227,6 +227,8 @@ categories = {
         "{charged_with} theft of services",
         "retail theft of property worth $50 in value",
         "{charged_with} unauthorized use of a {motor_vehicle}",
+        "unauthorized operation of a {motor_vehicle}",
+        "using a {motor_vehicle} without authorization",
         "unauthorized use of {stolen_property}",
         "unauthorized use of a {stolen_property} but did not sell it",
         "operating a {motor_vehicle} without the owner's permission",
