@@ -666,7 +666,7 @@ categories = {
         "{assault} in the first degree",
         "first degree {assault}",
         "{charged_with} {assault} in the 1st degree",
-        "{severe} assault {inflicted} bodily harm",
+        "{severe} assault {inflicted} {light} bodily harm",
         "{charged_with} assault causing bodily injury",
         "{charged_with} aggravated assault",
         "{charged_with} {severe} domestic assault",
@@ -696,6 +696,7 @@ categories = {
         "{assault} resulted in severe bodily trauma needing intensive care unit treatment"
         "felonious {assault}",
         "felon {charged_with} {assault}",
+        "{assault} - felony",
     ],
     "Simple Assault": [
         "{charged_with} {assault}",
