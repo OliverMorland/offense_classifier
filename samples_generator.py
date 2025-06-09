@@ -694,6 +694,8 @@ categories = {
         "{strangled} a {victim} until they nearly lost consciousness",
         "used excessive force to {assault} {victim} causing critical injuries",
         "{assault} resulted in severe bodily trauma needing intensive care unit treatment"
+        "felonious {assault}",
+        "felon {charged_with} {assault}",
     ],
     "Simple Assault": [
         "{charged_with} {assault}",
@@ -729,6 +731,8 @@ categories = {
         "{charged_with} simple {assault} after pushing {victim} at {place}",
         "{assault} with no {firearm}",
         "{charged_with} {assault} without a {weapon}",
+        "{charged_with} non felonious {assault}",
+        "{assault} but not felony",
     ],
     "Weapons Offense": [
         "{possessing} a firearm {without} a permit",
