@@ -37,6 +37,7 @@ categories = {
         "{improper} conveyance of {drug} in a {prison}",
         "{prison} inmate trafficked {drug}",
         "{charged_with} operation of a clandestine {drug} laboratory",
+        "{charged_with} cultivating {drug}",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -212,6 +213,7 @@ categories = {
         "{charged_with} unauthorized use of a {motor_vehicle}",
         "driving off in a {motor_vehicle} that was not theirs",
         "taking a {motor_vehicle} but not kidnapping anyone",
+        "prowling around a {motor_vehicle} at night",
         # General Property Theft
         "{conspiracy_to} commit larceny",
         "petty theft",
@@ -247,15 +249,18 @@ categories = {
         "{improper} taking",
         "{improper} appropriation of {stolen_property}",
         "{charged_with} taking of property",
-        # Fraud edge cases
+        "{failure to} pay for services",
+        "alter price of {stolen_property} in a store",
+        # Fraud Larceny edge cases
         "{charged_with} theft {without} having deceived the person",
-        "just theft no {deception} involved",
-        "{charged_with} theft but no fraud",
+        "theft with no {deception} involved",
+        "{charged_with} theft without {deception}",
         "unauthorized use of a {stolen_property} but did not sell it",
         "found with stolen {stolen_property} but did not covert it for {financial_gain}",
         "stole a {payment_card} but did not use it",
     ],
     "Other Property": [
+        # Property Damage
         "vandalized a private property by spray painting",
         "using graffiti to deface a property",
         "destroyed public property",
@@ -266,7 +271,12 @@ categories = {
         "{severe} property damage valued at $1000",
         "caused damage to {place} worth $300",
         "spraying graffiti",
-        "possession of graffiti items",
+        "{charged_with} possession of graffiti items",
+        "{severe} damage to property"
+        "fiddling with someone else's {vehicle_part}",
+        "tampering with another {motor_vehicle}",
+        "{charged_with} damaging a {vehicle_part}",
+        # Trespass
         "{charged_with} trespass",
         "{charged_with} trespassing",
         "{charged_with} trespassing on {place}",
@@ -274,6 +284,10 @@ categories = {
         "{charged_with} criminal trespass on private property",
         "{charged_with} criminal mischief",
         "{charged_with} tampering with property of a {victim}",
+        "unauthorized entry into a private {place}",
+        "{improper} entry into a private grounds",
+        "{improper} entry into school premises but did not break in",
+        # Leaving the scene of accident
         "criminal mischief",
         "{charged_with} hit and run while causing property damage",
         "{charged_with} hit and run while damaging property",
@@ -283,10 +297,11 @@ categories = {
         "fled the scene of a crash with damage to {motor_vehicle} but no injuries",
         "{charged_with} leaving the scene after having caused property damage",
         "fleeing the scene of an accident after damaging a {motor_vehicle}",
-        "{severe} damage to property"
-        "fiddling with someone else's {vehicle_part}",
-        "tampering with another {motor_vehicle}",
-        "{charged_with} damaging a {vehicle_part}",
+        "{failure to} report an accident",
+        "{failure to} stop at accident",
+        # burglary tools
+        "{charged_with} {possessing} burglary tools",
+        "{possessing} tools for breaking and entering",
     ],
     "Court Violation": [
         # Court Appearance
@@ -299,11 +314,13 @@ categories = {
         "{charged_with} {failure to} make a court appearance",
         # Registration
         "{failure to} notify about address change",
+        "{failure to} verify current address",
         "{failure to} register as a sex offender",
         "{charged_with} not registering as a sex offender",
         "{charged_with} non support",
         "{failure to} provide child support as ordered by the court",
         "{failure to} appear on bond",
+        # Failure to pay court fees
         "{charged_with} {failure to} pay child support",
         "violated terms of probation by missing check-ins",
         "disregarded court order to stay away from a victim",
@@ -358,6 +375,7 @@ categories = {
         "{improper} harassment of a {victim}",
         "{charged_with} harassment in a public place",
         "{charged_with} harassment",
+        "{charged_with} invasion of personal privacy",
         "{charged_with} causing a public nuisance",
         "{failure to} pay fare on public transport",
         "{charged_with} participating in a street gang",
@@ -490,6 +508,8 @@ categories = {
         "{charged_with} {improper} solicitation of rides",
         "{improper} solicitation",
         "{improper} selling of services with {invalid} license",
+        "contracting with an {invalid} license",
+        "{charged_with} contracting without a license",
         "prostitution",
         "{charged_with} soliciting prostitution",
         "{improper} pimping",
@@ -510,8 +530,6 @@ categories = {
         "{possessing} explicit images of a {minor}",
         "{charged_with} {possessing} indecent images of a {minor}",
         "{conspiracy_to} {distribute} child pornography",
-        # "{charged_with} {possessing} burglary tools",
-        # "{possessing} tools for breaking and entering",
     ],
     "All Other Offenses": [
         "{conspiracy_to} commit an offense",
@@ -536,6 +554,12 @@ categories = {
         "unknown",
         "{charged_with} ordinance violation",
         "{charged_with} violating local ordinance",
+        "{charged_with} fishing without a permit",
+        "{charged_with} hunting without a license",
+        "{improper} recreational fishing",
+        "{improper} recreational hunting",
+        "{possessing} wood that was unlawfully chopped down",
+        "{charged_with} truancy",
     ],
     "Murder": [
         "intentionally killed another person",
@@ -719,7 +743,7 @@ categories = {
         "{assault} resulted in severe bodily trauma needing intensive care unit treatment"
         "{inflicted} {severe} injury requiring hospitalization",
         "{minor_degree_level} {assault} causing bodily injury",
-        "{assault} in the {minor_degree_level} still {inflicted} injury",
+        "{assault} in the {minor_degree_level} still {inflicted} minor injury",
         # using a weapon
         "{severe} {assault} involving a {weapon}",
         "{assault} with a {firearm}",
@@ -957,6 +981,7 @@ categories = {
         "driving with {fraudulent} insurance",
         # Conversion
         "{charged_with} criminal conversion of {stolen_property}",
+        "{improper} conversion of {stolen_property}",
         "{charged_with} selling unlawfully obtained {stolen_property}",
         # Check Fraud
         "{charged_with} theft by check of a {victim}",
@@ -983,6 +1008,7 @@ categories = {
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
         # Theft by deception
         "{charged_with} theft by {deception}",
+        "theft with {deception}",
         "stealing from a {victim} by deceiving them",
         "{charged_with} theft using deceptive means",
         "{charged_with} giving false information to obtain a refund",
@@ -1081,6 +1107,8 @@ categories = {
         "gave false {identification} without seeking {financial_gain}",
         "{charged_with} {failure to} identify fugitive",
         "{failure to} give true name to an {officer}",
+        "{charged_with} misrepresenting identity",
+        "{charged_with} concealing identity",
         # False non identification information
         "{charged_with} giving false information to an {officer}",
         "gave false information on a report to an {officer}",
@@ -1089,6 +1117,7 @@ categories = {
         "{charged_with} making a false statement with no financial purpose",
         "{charged_with} making a false statement for no particular purpose",
         "{improper} giving of fictitious information to an {officer}",
+        "{charged_with} giving a false crime report",
         # Tampering with evidence
         "{improper} tampering with evidence at the {place}",
         "{charged_with} tampering with official records",
@@ -1108,6 +1137,7 @@ categories = {
         "{charged_with} custodial interference",
         "{charged_with} disrupting court proceedings",
         "{charged_with} being a nuisance in court",
+        "{charged_with} hindering judicial proceedings",
     ],
     "Traffic Driving": [
         "speeding near a {place}",
@@ -1147,6 +1177,7 @@ categories = {
         "{motor_vehicle} nuisance",
         "{improper} violation of the light law",
         "{failure to} stop at a red light",
+        "{charged_with} joyriding",
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -1180,6 +1211,7 @@ categories = {
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
         "{charged_with} driving under suspension",
+        "{charged_with} driving under restraint",
         "driving on {invalid} license and privilege",
         "driving {without} a valid license",
         "authorized to drive owner's {motor_vehicle} but not licensed",
