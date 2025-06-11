@@ -14,6 +14,7 @@ categories = {
         "{charged_with} dealing in {drug}",
         "{charged_with} {drug} dealing",
         "trafficking {drug}",
+        "{drug} trafficking - felony",
         "{conspiracy_to} traffic {drug}",
         "transporting {drug}",
         "selling of {drug}",
@@ -36,7 +37,7 @@ categories = {
         "{possessing} precursors to make {drug}",
         "{conspiracy_to} {distribute} {drug} onto grounds of a {prison}",
         "{improper} conveyance of {drug} in a {prison}",
-        "{prison} inmate trafficked {drug}",
+        "{prison} inmate trafficked {drug} - felony",
         "{charged_with} operation of a clandestine {drug} laboratory",
         "{charged_with} cultivating {drug}",
     ],
@@ -47,7 +48,7 @@ categories = {
         "smoking {drug} by the {place}",
         "{charged_with} consuming {drug}",
         "possess {drug} for personal use",
-        "possess {drug}",
+        "possess {drug} - felony",
         "{possessing} {drug}",
         "{improper} possession of a {drug}",
         "received {drug}",
@@ -58,7 +59,7 @@ categories = {
         "in possession of {drug}",
         "under influence of {drug}",
         "taking {drug}",
-        "use of {drug}",
+        "use of {drug} - felony",
         "using {drug}",
         "carrying {drug}",
         "{charged_with} being under the influence of {drug}",
@@ -172,11 +173,14 @@ categories = {
     ],
     "Burglary": [
         "{charged_with} burglary",
+        "{charged_with} burglary - felony",
+        "burglary of a {motor_vehicle}",
         "{conspiracy_to} commit burglary",
         "{charged_with} breaking and entering",
         "broke into a house and stole a {stolen_property}",
         "forced entry into a building to take {stolen_property}",
         "{improper} entry into a {motor_vehicle}",
+        "breaking and entering a {motor_vehicle} by a {place}",
         "{improper} entry into a building",
         "caught breaking into a private property to steal {stolen_property}",
         "{charged_with} second-degree burglary for entering a residence unlawfully",
@@ -200,6 +204,7 @@ categories = {
         # Motor vehicle theft
         "theft of a {motor_vehicle}",
         "{motor_vehicle} theft",
+        "{motor_vehicle} theft - felony",
         "operating a {motor_vehicle} without the owner's permission",
         "using a {motor_vehicle} without authorization of owner",
         "{improper} taking of {motor_vehicle}",
@@ -243,7 +248,7 @@ categories = {
         "theft of {payment_card}"
         "stole a {payment_card} from a {victim}",
         "shoplifting {stolen_property} from a {place}",
-        "shoplifted {stolen_property}",
+        "shoplifted {stolen_property} - felony",
         "grabbed {stolen_property} from a store shelf and ran",
         "took an unattended bag from a table at {place}",
         "pick pocketed {stolen_property} from a shopper",
@@ -261,7 +266,7 @@ categories = {
         "{improper} taking",
         "{improper} taking of {stolen_property}",
         "{improper} appropriation of {stolen_property}",
-        "{charged_with} taking of property",
+        "{charged_with} taking of property - felony",
         "{failure to} pay for services",
         "alter price of {stolen_property} in a store",
         # Fraud Larceny edge cases
@@ -709,6 +714,9 @@ categories = {
         "{charged_with} physically harming a child but not sexually"
     ],
     "Forcible Sex Offense": [
+        "rape in the first degree",
+        "first degree rape",
+        "rape in the {minor_degree_level}",
         "{raped} an individual by force",
         "sexual assault of a person using violence",
         "forcibly {raped} another adult at the {place}",
@@ -824,7 +832,7 @@ categories = {
         "{possessing} a firearm {without} a permit",
         "possessed a {weapon} illegally",
         "{improper} possession of a regulated {firearm}",
-        "recklessly wielding a {weapon}",
+        "recklessly wielding a {weapon} - felony",
         "regulated {weapon} illegal possession",
         "{improper} possession of a regulated {weapon}",
         "{charged_with} {possessing} a {weapon}",
@@ -862,6 +870,7 @@ categories = {
     ],
     "Robbery": [
         "{severe} robbery",
+        "{charged_with} robbery - felony",
         "{charged_with} robbery",
         "armed carjacking",
         "held up a store at gunpoint demanding money",
@@ -1304,6 +1313,9 @@ categories = {
         "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger"
         "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
         "driving while {under_the_influence} with {family_member} in the {motor_vehicle}",
+        # Underage edge case
+        "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
+        "{charged_with} driving {under_the_influence} with a {minor} as a passenger",
     ],
     "Immigration": [
         "{charged_with} reentry after deportation",
