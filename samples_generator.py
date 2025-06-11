@@ -466,6 +466,7 @@ categories = {
         "{minor} smoking cigarettes",
         "possession of tobacco by a {minor}",
         "{charged_with} underage tobacco possession",
+        "{possessing} a {alcoholic_beverage} while underage 21"
     ],
     # "General Alcohol Violation": [
     #     "an {alcoholic_beverage} was found in the {motor_vehicle}",
@@ -737,6 +738,7 @@ categories = {
         "aggravated assault",
         "{severe} assault",
         "{charged_with} {severe} {assault}",
+        "{charged_with} {severe} domestic assault",
         # First Degree
         "{assault} in the first degree",
         "first degree {assault}",
@@ -746,7 +748,6 @@ categories = {
         "{assault} which {inflicted} minor injuries",
         "{charged_with} assault causing bodily injury",
         "{charged_with} aggravated assault",
-        "{charged_with} {severe} domestic assault",
         "{severe} domestic {assault} with bodily injury",
         "domestic {assault} causing injuries to body",
         "{assault} on {family_member} causing injuries",
@@ -754,7 +755,6 @@ categories = {
         "{charged_with} {inflicted} {severe} injury leading to long-term damage",
         "{assault} causing bodily injury requiring emergency treatment",
         "assault {inflicted} {severe} harm and {severe} injuries",
-        "{charged_with} {assault} with a deadly {weapon} at {place}",
         "{assault} resulted in severe bodily trauma needing intensive care unit treatment"
         "{inflicted} {severe} injury requiring hospitalization",
         "{minor_degree_level} {assault} causing bodily injury",
@@ -765,6 +765,8 @@ categories = {
         "used a {weapon} to seriously wound a person",
         "{severe} aggravated {assault} using a {weapon}",
         "{severe} aggravated {assault} using a {firearm}",
+        "{charged_with} {assault} with a deadly {weapon} at {place}"
+        "{minor_degree_level} {assault} using a {weapon}",
         # Choking
         "{strangled} with a {weapon} causing severe injury",
         "{strangled} {victim} with a rope causing {severe} injuries",
@@ -777,6 +779,7 @@ categories = {
         "felonious {assault}",
         "felon {charged_with} {assault}",
         "{assault} - felony and not misdemeanor",
+        "{assault} {minor_degree_level} felony",
     ],
     "Simple Assault": [
         "{charged_with} {assault}",
@@ -1381,7 +1384,7 @@ placeholder_options = {
                      "menacing"],
     "minor_degree_level": ["second degree", "third degree", "fourth degree", "2nd degree", "3rd degree", "4th degree"],
     "alcoholic_beverage": ["open container", "alcoholic container", "container with alcohol", "bottle of liquor",
-                           "can of beer", "bottle of whiskey", "alcoholic beverage"],
+                           "can of beer", "bottle of whiskey", "alcoholic beverage", "malt beverage"],
     "deception": ["deception", "misrepresentation", "swindle", "fraud", "trickery", "conning"],
     "fraudulent": ["false", "fictitious", "fabricated", "counterfeit", "forged", "untrue", "fraudulent", "bogus",
                    "fake", "fictitious"],
