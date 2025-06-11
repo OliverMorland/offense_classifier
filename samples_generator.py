@@ -196,13 +196,14 @@ categories = {
         "used tools to break into an apartment and steal electronics",
         "{charged_with} breaking and entering at {place} to commit theft"
     ],
-    "Larceny/Motor Vehicle Theft": [
+    "Motor Vehicle Theft": [
         # Motor vehicle theft
+        "theft of a {motor_vehicle}",
         "{motor_vehicle} theft",
         "operating a {motor_vehicle} without the owner's permission",
         "using a {motor_vehicle} without authorization of owner",
-        "{improper} taking of {stolen_property}",
         "{improper} taking of {motor_vehicle}",
+        "{conspiracy_to} steal a {motor_vehicle}",
         "{charged_with} carjacking",
         "{charged_with} carjacking without a weapon",
         "{charged_with} unauthorized use of a {motor_vehicle} belonging to a {victim}",
@@ -214,8 +215,16 @@ categories = {
         "attempting to take a {motor_vehicle} without permission",
         "{charged_with} unauthorized use of a {motor_vehicle}",
         "driving off in a {motor_vehicle} that was not theirs",
-        "taking a {motor_vehicle} but not kidnapping anyone",
         "prowling around a {motor_vehicle} at night",
+        "theft of a {motor_vehicle} from a dealership",
+        # Burglary Edge cases
+        "{charged_with} theft of a {motor_vehicle} {without} breaking into it",
+        "theft of a {motor_vehicle} but no break in",
+        # Kidnapping edge cases
+        "taking a {motor_vehicle} but not kidnapping anyone",
+        "took a {motor_vehicle} with nobody inside",
+    ],
+    "Larceny": [
         # General Property Theft
         "{conspiracy_to} commit larceny",
         "petty theft",
@@ -233,7 +242,6 @@ categories = {
         # Stealing
         "theft of {payment_card}"
         "stole a {payment_card} from a {victim}",
-        "theft of a {motor_vehicle} from a dealership",
         "shoplifting {stolen_property} from a {place}",
         "shoplifted {stolen_property}",
         "grabbed {stolen_property} from a store shelf and ran",
@@ -247,8 +255,11 @@ categories = {
         "took a package from someone's porch {without} permission",
         "{charged_with} petty theft after taking a bicycle from a park",
         "{charged_with} theft of services",
-        "unauthorized use of {stolen_property}",
+        "theft by taking over ${numeric_quantity} and under ${numeric_quantity}",
+        "{charged_with} theft under ${numeric_quantity} at a {place}",
+        "theft over ${numeric_quantity}",
         "{improper} taking",
+        "{improper} taking of {stolen_property}",
         "{improper} appropriation of {stolen_property}",
         "{charged_with} taking of property",
         "{failure to} pay for services",
@@ -1335,8 +1346,8 @@ placeholder_options = {
     "under_the_influence": ["under the influence of alcohol", "intoxicated", "drunk", "high",
                             "under the influence", "in an intoxicated state", "impaired"],
     "charged_with": ["charged with", "arrested for", "accused of", "indicted for", "under suspicion of"],
-    "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to"],
-    "without": ["without", "not with", "absent of", "lacking"],
+    "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to", "solicitation to"],
+    "without": ["without", "not with", "absent of", "lacking", "with no"],
     "reckless": ["dangerous", "careless", "negligent", "reckless", "irresponsible", "unsafe"],
     "invalid": ["suspended", "invalid", "expired", "revoked", "fake", "canceled"],
     "stolen_property": ["property", "handbag", "wallet", "valuables", "electronics", "personal belongings", "jewelry",
@@ -1355,7 +1366,7 @@ placeholder_options = {
     "firearm": ["firearm", "automatic weapon", "gun", "rifle", "handgun", "automatic rifle", "pistol"],
     "victim": ["bystander", "shopkeeper", "employee", "person", "individual", "victim", "manager"],
     "negligence": ["negligence", "carelessness", "lack of care", "disregard", "omission"],
-    "numeric_quantity": ["one", "5", "5 to 10", "15", "thirty", "45", "fifty five", "50-100"],
+    "numeric_quantity": ["5", "5 to 10", "15", "45", "50-100", "250", "750", "1000"],
     "resisting": ["resisting", "resisting", "obstructing", "having resisted", "having obstructed", "hindering",
                   "having hindered", "opposing", "refusing"],
     "officer": ["police officer", "law enforcement officer", "law enforcement agent", "police agent", "officer",
