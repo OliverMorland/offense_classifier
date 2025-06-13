@@ -271,15 +271,31 @@ if __name__ == "__main__":
 
     input_file = "offense_classifier_end_to_end/test_sheet.csv"
     output_file = "offense_classifier_end_to_end/test_sheet_results.csv"
+    # input_file = "test_sheet.csv"
+    # output_file = "test_sheet_results.csv"
 
-    new_rows = []
+    score_board = {}
+    totals = {}
     with open(output_file, mode='w', newline='', encoding='utf-8'):
         with open(input_file, mode='r', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 offense_labels = get_classifier_results(classifier, row)
                 is_correct = is_answer_correct(row, offense_labels)
+                correct_classification = row["Correct Classification"]
+                totals[correct_classification] = totals.get(correct_classification, 0) + 1
+                if is_correct:
+                    score_board[correct_classification] = score_board.get(correct_classification, 0) + 1
                 new_row_data = create_new_row_data(row, offense_labels, is_correct)
                 add_row_to_csv(output_file, new_row_data)
 
     print(f"Classifed text from {input_file} and printed it to {output_file}")
+    for category, total in totals.items():
+        score = score_board[category]
+        if total > 0:
+            percentage = (score / total) * 100
+        else:
+            percentage = 0
+        print(f"{category}: {score}/{total}, {percentage:.0f}%")
+
+
