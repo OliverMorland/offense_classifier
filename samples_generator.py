@@ -366,56 +366,56 @@ categories = {
         "attempted to influence a witness in violation of court directives",
         "skipped scheduled drug testing mandated by the court"
     ],
-    "Public Order": [
+    "Disorderly Conduct": [
         # Disorderly behaviour
+        "{charged_with} breach of the peace",
+        "{charged_with} disorderly conduct",
+        "{improper} loitering and prowling",
+        "{charged_with} causing a public {disturbance} at the {place}",
+        "{failure to} to respect the lawful order",
+        "{charged_with} {fighting} in public",
+        "{charged_with} inducing panic",
+        "{charged_with} causing a {severe} {disturbance} in a public {place}",
+        "participated in a {severe} {disturbance}",
+        "{charged_with} {harassing} a {victim} in a public {place}",
+        "{charged_with} {harassing}",
+        "{charged_with} causing a noise violation",
+        "{improper} nudity disturbing passersby",
+        "{charged_with} public indecency",
+        # Court Edge Case
+        "{charged_with} causing a {disturbance} in a court of law",
+        "{harassing} a judge or jury member",
+        "{charged_with} disrupting court proceedings",
+        # Street Gang
+        "{charged_with} participating in a street gang",
+        "{improper} gang activity",
+        # Noisiness
+        "{charged_with} shouting too loudly by the {place}",
+        "playing loud music by a {place}",
+        # Breaking urban rules
+        "{failure to} to pay public transportation fare"
+        "{charged_with} pedestrian violation",
+        "{improper} obstruction of a passageway",
+        "{charged_with} jaywalking",
+        "{charged_with} crossing by a {place} where there is no crosswalk",
         "{charged_with} littering in a public {place}",
         "littering by a {place}",
         "{severe} littering",
+        "urinating or defecating by a {place}",
         "{charged_with} {improper} littering",
         "{charged_with} leaving dog at large",
         "{charged_with} not controlling dog by the {place}",
         "{improper} control of dog",
-        "shouting obscenities and disturbing the peace in public",
-        "engaged in a loud argument in a public {place}",
-        "created a disturbance by yelling in a busy {place}",
-        "disorderly conduct",
-        "{charged_with} using offensive words and gestures in public",
-        "breach of the peace",
-        "{charged_with} brawling in public",
-        "{charged_with} {improper} breach of the peace",
-        "{charged_with} causing an affray",
-        "participated in a {severe} affray",
-        "{charged_with} disorderly conduct on public transport",
-        "{severe} misconduct on public transportation",
-        "shouting loudly on public transport",
-        "{charged_with} interfering with an emergency phone call",
-        "{improper} loitering and prowling",
-        "{charged_with} inducing panic",
-        "{charged_with} molesting passerby",
-        "{improper} harassment of a {victim}",
-        "{charged_with} harassment in a public place",
-        "{charged_with} harassment",
-        "{charged_with} invasion of personal privacy",
-        "{charged_with} causing a public nuisance",
-        "{failure to} pay fare on public transport",
-        "{charged_with} participating in a street gang",
-        "{improper} gang activity",
-        "{failure to} to pay transportation fare",
-        "causing a public disturbance",
-        "public order offense",
-        "{charged_with} disturbing the public order",
-        "{failure to} to respect the lawful order",
-        "obscene act in public",
-        "indecent exposure in public",
-        "{charged_with} urinating or defecating in public",
-        "{improper} urinating in public",
-        "causing chaos by throwing trash in public areas",
-        "arguing loudly with a {victim} in a crowd",
-        "brawling at {place} causing panic among bystanders",
-        "playing extremely loud music near {place}, disturbing residents",
-        "disrupting a public event with unruly behavior",
-        "aggressively confronting strangers in the street, disturbing public peace",
+        "{charged_with} {improper} dumping of waste",
+        "{improper} dumping",
+        "{charged_with} {improper} curfew violation at night",
+        # Domestic Assault Edge Case
+        "{charged_with} having a loud domestic argument",
+        "domestic argument {without} violence",
+    ],
+    "Public Intoxication": [
         # Alcohol-related offenses
+        "{charged_with} public intoxication",
         "being publicly {under_the_influence} at the {place}",
         "{under_the_influence} of alcohol whilst not driving",
         "an {alcoholic_beverage} was found in the {motor_vehicle}",
@@ -429,6 +429,9 @@ categories = {
         "consuming alcohol in a public {place}",
         "{improper} {possessing} of alcohol",
         "{improper} consumption of alcohol by a person who is not a {minor}",
+        # Drug edge cases
+        "{under_the_influence} by a non-drug substance",
+        "{under_the_influence} of a substance that is not a drug",
     ],
     "Rioting": [
         "rioting",
@@ -473,20 +476,8 @@ categories = {
         "{charged_with} underage tobacco possession",
         "{possessing} a {alcoholic_beverage} while underage 21"
     ],
-    # "General Alcohol Violation": [
-    #     "an {alcoholic_beverage} was found in the {motor_vehicle}",
-    #     "an {alcoholic_beverage} is in the {motor_vehicle} but is not the driver's",
-    #     "passenger in a {motor_vehicle} with an open container",
-    #     "{charged_with} {improper} possession of an {alcoholic_beverage}",
-    #     "{improper} possession of an {alcoholic_beverage}",
-    #     "{alcoholic_beverage}",
-    #     "{possessing} a {alcoholic_beverage} which was not closed",
-    #     "{possessing} a {alcoholic_beverage} in a {improper} place",
-    #     "consuming alcohol in a public {place}",
-    #     "{improper} {possessing} of alcohol",
-    #     "{improper} consumption of alcohol by a person who is not a {minor}",
-    # ],
     "Public Institution Violation": [
+        # Prison Violation
         "{charged_with} introducing contraband into a {prison}",
         "{possessing} contraband in a {prison}",
         "{possessing} a prohibited objects in a {prison}",
@@ -507,6 +498,9 @@ categories = {
         "{improper} distribution of items in a {prison} which are not drugs",
         "selling {improper} contraband in a {prison} but not {drug}",
         "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
+        # Communication Device Violation
+        "{charged_with} tampering with a communication device in a {prison}",
+        "{improper} use of a communication device in a {prison}",
     ],
     "Illicit Business": [
         "{charged_with} illegal gambling near a {place}",
@@ -827,6 +821,8 @@ categories = {
         "{charged_with} non felonious {assault}",
         "{assault} but not felony",
         "{assault} - misdemeanor and not felony",
+        # Public Order Edge Case
+        "{charged_with} a violent domestic argument causing injury",
     ],
     "Weapons Offense": [
         "{possessing} a firearm {without} a permit",
@@ -1098,6 +1094,8 @@ categories = {
         "resist arrest",
         "{resisting} an {officer} without violence",
         "obstructing being put under arrest by a {officer}",
+        "{charged_with} {resisting} law enforcement - felony",
+        "{resisting} arrest by an {officer} - felony",
         "{resisting} apprehension",
         "{resisting}, evading or obstructing an {officer}",
         "{resisting} a {officer}",
@@ -1110,6 +1108,7 @@ categories = {
         "{charged_with} having resisted arrest with no violence",
         "{resisting} apprehension by an {officer} without resort to violence",
         "{resisting} arrest but no violence",
+        # Taking officer's equipment
         "taking a communication device from an {officer}",
         "attempting to remove a device from an {officer}",
         "{improper} use of {officer} radio",
@@ -1136,15 +1135,16 @@ categories = {
         "{failure to} give true name to an {officer}",
         "{charged_with} misrepresenting identity",
         "{charged_with} concealing identity",
-        # False non identification information
+        # False Information
         "{charged_with} giving false information to an {officer}",
-        "gave false information on a report to an {officer}",
         "intentionally lied to an {officer} during an investigation",
         "{charged_with} making a false statement",
         "{charged_with} making a false statement with no financial purpose",
         "{charged_with} making a false statement for no particular purpose",
         "{improper} giving of fictitious information to an {officer}",
         "{charged_with} giving a false crime report",
+        # False Information Edge case
+        "{charged_with} giving false information in court",
         # Tampering with evidence
         "{improper} tampering with evidence at the {place}",
         "{charged_with} tampering with official records",
@@ -1162,8 +1162,7 @@ categories = {
         "wasting the time of an {officer}",
         "{charged_with} misusing a 911 call",
         "{charged_with} custodial interference",
-        "{charged_with} disrupting court proceedings",
-        "{charged_with} being a nuisance in court",
+        "{charged_with} obstructing official business",
         "{charged_with} hindering judicial proceedings",
     ],
     "Traffic Driving": [
@@ -1292,7 +1291,7 @@ categories = {
         "{charged_with} blood alcohol content over the legal limit",
         "{motor_vehicle} operator refused to take a blood alcohol content test",
         "driving while {under_the_influence}",
-        "{severe} driving {under_the_influence}",
+        "{severe} driving {under_the_influence} - felony",
         "driving while seriously {under_the_influence}",
         "operating a {motor_vehicle} while {under_the_influence}",
         "{charged_with} driving a {motor_vehicle} while {under_the_influence}",
@@ -1401,7 +1400,12 @@ placeholder_options = {
     "deception": ["deception", "misrepresentation", "swindle", "fraud", "trickery", "conning"],
     "fraudulent": ["false", "fictitious", "fabricated", "counterfeit", "forged", "untrue", "fraudulent", "bogus",
                    "fake", "fictitious"],
-    "financial_gain": ["financial gain", "monetary gain", "profit", "economic benefit", "financial profit", "money"]
+    "financial_gain": ["financial gain", "monetary gain", "profit", "economic benefit", "financial profit", "money"],
+    "fighting": ["fighting", "brawling", "engaging in a fight", "physical altercation", "scuffling"],
+    "disturbance": ["disturbance", "disorderly conduct", "unruly behavior", "nuisance",
+                    "rowdiness", "disorder", "breach of the peace", "affray"],
+    "harassing": ["harassing", "annoying", "bothering", "disturbing", "molesting", "pestering", "shouting insults at",
+                  "screaming obscenities at", "taunting", "abusing verbally", "yelling profanities at"],
 }
 
 
