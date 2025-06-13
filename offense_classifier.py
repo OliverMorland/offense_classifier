@@ -7,6 +7,8 @@ import numpy as np
 from datasets import Dataset, DatasetDict
 import os
 from datasets import load_from_disk
+import ast
+import csv
 
 
 def load_data(file_path):
@@ -203,5 +205,81 @@ class OffenseClassifier:
         return funneled_category, round(float(confidence_score), 2)
 
 
+def add_row_to_csv(filename, new_row_data):
+    headers = ["Charge Section", "Cleaned Text", "Queried Text", "Correct Classification", "Classifier Result",
+               "Is Correct"]
+    file_exists = os.path.isfile(filename)
+    try:
+        with open(filename, mode='a', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=headers)
+            if not file_exists or os.path.getsize(filename) == 0:
+                writer.writeheader()
+            row_dict = dict(zip(headers, new_row_data))
+            writer.writerow(row_dict)
+    except IOError as e:
+        print(f"Error writing to file '{filename}': {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+
+def extract_array_elements(string: str):
+    try:
+        # Safely evaluate the string to create a Python list object
+        actual_list = ast.literal_eval(string)
+
+        return actual_list
+
+    except (ValueError, SyntaxError) as e:
+        print(f"Error converting string: {e}")
+
+
+def get_classifier_results(classifier, row):
+    queried_text = row["Queried Text"]
+    queried_text_elements = extract_array_elements(queried_text)
+
+    offense_labels = []
+    for queried_text_element in queried_text_elements:
+        offense_result = classifier.classify_text(queried_text_element)
+        offense_label = offense_result[0]
+        offense_labels.append(offense_label)
+    return offense_labels
+
+
+def is_answer_correct(row, offense_labels):
+    correct_answer = row["Correct Classification"]
+    if correct_answer in offense_labels:
+        is_correct = True
+    else:
+        is_correct = False
+    return is_correct
+
+
+def create_new_row_data(row, offense_labels, is_correct):
+    new_row_data = [
+        row["Charge Section"],
+        row["Cleaned Text"],
+        row["Queried Text"],
+        row["Correct Classification"],
+        str(offense_labels),
+        is_correct
+    ]
+    return new_row_data
+
+
 if __name__ == "__main__":
     classifier = OffenseClassifier()
+
+    input_file = "offense_classifier_end_to_end/test_sheet.csv"
+    output_file = "offense_classifier_end_to_end/test_sheet_results.csv"
+
+    new_rows = []
+    with open(output_file, mode='w', newline='', encoding='utf-8'):
+        with open(input_file, mode='r', newline='', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                offense_labels = get_classifier_results(classifier, row)
+                is_correct = is_answer_correct(row, offense_labels)
+                new_row_data = create_new_row_data(row, offense_labels, is_correct)
+                add_row_to_csv(output_file, new_row_data)
+
+    print(f"Classifed text from {input_file} and printed it to {output_file}")
