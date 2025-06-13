@@ -222,6 +222,7 @@ categories = {
         "driving off in a {motor_vehicle} that was not theirs",
         "prowling around a {motor_vehicle} at night",
         "theft of a {motor_vehicle} from a dealership",
+        "unlawfully driving away a {motor_vehicle}",
         # Burglary Edge cases
         "{charged_with} theft of a {motor_vehicle} {without} breaking into it",
         "theft of a {motor_vehicle} but no break in",
@@ -244,6 +245,7 @@ categories = {
         "{possessing} a stolen {payment_card}",
         "caught with a stolen {motor_vehicle} in possession",
         "driving a stolen {motor_vehicle}",
+        "knowingly receiving or concealing {stolen_property}",
         # Stealing
         "theft of {payment_card}"
         "stole a {payment_card} from a {victim}",
@@ -269,6 +271,8 @@ categories = {
         "{charged_with} taking of property - felony",
         "{failure to} pay for services",
         "alter price of {stolen_property} in a store",
+        "{improper} use of a universal product code label in a store",
+        "shoplift alter price, less than ${numeric_quantity}",
         # Fraud Larceny edge cases
         "{charged_with} theft {without} having deceived the person",
         "theft with no {deception} involved",
