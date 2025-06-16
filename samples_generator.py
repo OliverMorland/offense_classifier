@@ -998,6 +998,7 @@ categories = {
         "{charged_with} retail fraud",
         "{charged_with} mail fraud",
         "{charged_with} fraudulent use of a telephone",
+        "falsify business records",
         # Using a stolen card
         "{charged_with} fraudulent use of a {payment_card}",
         "{improper} use of {payment_card} under $1,500",
@@ -1025,6 +1026,7 @@ categories = {
         "showed a {fraudulent} driver's license to a {officer}",
         "driving with a {fraudulent} license",
         "driving with {fraudulent} insurance",
+        "{charged_with} insurance fraud",
         # Conversion
         "{charged_with} criminal conversion of {stolen_property}",
         "{improper} conversion of {stolen_property}",
@@ -1051,6 +1053,7 @@ categories = {
         "{possessing} {identification} to commit forgery",
         "{conspiracy_to} impersonate another",
         "{improper} impersonation",
+        "{charged_with} false personation",
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
         # Theft by deception
         "{charged_with} theft by {deception}",
@@ -1058,6 +1061,9 @@ categories = {
         "stealing from a {victim} by deceiving them",
         "{charged_with} theft using deceptive means",
         "{charged_with} giving false information to obtain a refund",
+        # Not paying tax
+        "{failure to} file income tax",
+        "{improper} income tax violation",
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
