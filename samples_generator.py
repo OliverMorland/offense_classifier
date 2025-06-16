@@ -1248,6 +1248,7 @@ categories = {
         "all passengers did not have their safety belts on in the {motor_vehicle}",
         "{charged_with} not wearing a seat belt",
         "{charged_with} failing to wear a seat belt while driving",
+        "no child restraint in {motor_vehicle}",
     ],
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
@@ -1326,6 +1327,12 @@ categories = {
         "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger"
         "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
         "driving while {under_the_influence} with {family_member} in the {motor_vehicle}",
+        "driving while {under_the_influence} with a {minor_degree_level} aggravating factor",
+        "operating a vehicle {under_the_influence} - refusal",
+        "actual physical control of a {motor_vehicle} {under_the_influence}",
+        "{charged_with} driving or being in actual physical control with an alcohol concentration",
+        #Traffic Edge Case
+        "operation without being in reasonable control of {motor_vehicle}",
         # Underage edge case
         "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
         "{charged_with} driving {under_the_influence} with a {minor} as a passenger",
