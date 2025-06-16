@@ -395,7 +395,7 @@ categories = {
         "participated in a {severe} {disturbance}",
         "{charged_with} {harassing} a {victim} in a public {place}",
         "{charged_with} {harassing}",
-        "{charged_with} harassment in the {degree_level}",
+        "{charged_with} harassment in the {minor_degree_level}",
         "{charged_with} causing a noise violation",
         "{improper} nudity disturbing passersby",
         "{charged_with} public indecency",
@@ -1508,4 +1508,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1200)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
