@@ -20,6 +20,7 @@ categories = {
         "selling of {drug}",
         "{drug} for sale",
         "{possessing} {drug} for sale",
+        "{possessing} a {schedule_drug} substance with intent to {distribute}",
         "{charged_with} {possessing} {drug} for sale",
         "possession of {drug} with intent to {distribute}",
         "possession of {drug} with intent",
@@ -74,6 +75,14 @@ categories = {
         "{possessing} {drug} in a drug-free zone",
         "attempted possession of {drug}",
         "minor misdemeanor {drug} possession",
+        "{possessing} a {schedule_drug} substance",
+        "{conspiracy_to} to unlawfully possess a {drug}",
+        #Larceny Edge Case
+        "{charged_with} simple possession of {schedule_drug}",
+        # Drug Trafficking Edge Case
+        "possession with intent to use {drug} but not {distribute} it",
+        # Weapons Offense Edge Case
+        "possess {drug} while armed",
     ],
     "Unspecified Drug Offense": [
         "possession of drug paraphernalia",
@@ -1411,6 +1420,7 @@ placeholder_options = {
                     "rowdiness", "disorder", "breach of the peace", "affray"],
     "harassing": ["harassing", "annoying", "bothering", "disturbing", "molesting", "pestering", "shouting insults at",
                   "screaming obscenities at", "taunting", "abusing verbally", "yelling profanities at"],
+    "schedule_drug": ["schedule 1", "schedule 2", "schedule 3", "schedule 4", "schedule 5", "schedule 6"],
 }
 
 
