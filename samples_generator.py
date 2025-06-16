@@ -801,6 +801,7 @@ categories = {
         "{severe} aggravated {assault} using a {firearm}",
         "{charged_with} {assault} with a deadly {weapon} at {place}"
         "{minor_degree_level} {assault} using a {weapon}",
+        "batter by use of a {weapon}",
         # Choking
         "{strangled} with a {weapon} causing severe injury",
         "{strangled} {victim} with a rope causing {severe} injuries",
