@@ -345,6 +345,8 @@ categories = {
         "{charged_with} {failure to} comply with court order",
         "{charged_with} {failure to} comply with a protective order",
         "{charged_with} {failure to} make a court appearance",
+        "{failure to} appear for booking or processing",
+        "{failure to} appear on felony offense"
         # Registration
         "{failure to} notify about address change",
         "{failure to} verify current address",
@@ -354,6 +356,8 @@ categories = {
         "nonsupport",
         "{failure to} provide child support as ordered by the court",
         "{failure to} appear on bond",
+        "{failure to} comply with sexual offender registration"
+        "predatory offender who knowingly violates registration"
         # Failure to pay court fees
         "{charged_with} {failure to} pay child support",
         "violated terms of probation by missing check-ins",
@@ -380,6 +384,9 @@ categories = {
         "breached the conditions of a plea agreement",
         "attempted to influence a witness in violation of court directives",
         "skipped scheduled drug testing mandated by the court"
+        # Edge cases
+        "{failure to} pay",
+        "{failure to} register",
     ],
     "Disorderly Conduct": [
         # Disorderly behaviour
@@ -785,6 +792,7 @@ categories = {
         "{inflicted} {severe} injury requiring hospitalization",
         "{minor_degree_level} {assault} causing bodily injury",
         "{assault} in the {minor_degree_level} still {inflicted} minor injury",
+        "{severe} malicious wounding",
         # using a weapon
         "{severe} {assault} involving a {weapon}",
         "{assault} with a {firearm}",
@@ -801,6 +809,7 @@ categories = {
         "{strangled} a {victim} until they nearly lost consciousness",
         "severely {strangled} someone during a {fight}",
         "{strangled} an individual requiring medical attention",
+        "{charged_with} strangulation and suffocation",
         # Felonious Assault
         "felonious {assault}",
         "felon {charged_with} {assault}",
@@ -1255,6 +1264,17 @@ categories = {
         "{improper} violation of the light law",
         "{failure to} stop at a red light",
         "{charged_with} joyriding",
+        "{improper} stopping or parking within 20 feet of a crosswalk",
+        "{improper} parking by a sidewalk or driveway",
+        "{improper} passing",
+        "violation of temporary instruction permit",
+        "{charged_with} operating an all terrain vehicle on a roadway",
+        "{failure to} yield the right of way",
+        "{failure to} exercise due caution whilst driving a {motor_vehicle}",
+        "{charged_with} driving in excess of 100 mph",
+        "{failure to} yield from stop or yield controlled intersection",
+        "first degree {reckless} driving",
+        "{improper} backing up of a {motor_vehicle}",
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -1285,6 +1305,8 @@ categories = {
         "{charged_with} not wearing a seat belt",
         "{charged_with} failing to wear a seat belt while driving",
         "no child restraint in {motor_vehicle}",
+        "{motor_vehicle} {vehicle_part} required",
+        "{failure to} dim lights",
     ],
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
@@ -1333,6 +1355,11 @@ categories = {
         # Fraud Edge Case
         "driving under an {invalid} license but not a {fraudulent} license",
         "driver's insurance is {invalid} but not {fraudulent}",
+        "{failure to} purchase a driver's license",
+        # Larceny Edge case
+        "{charged_with} permitting unauthorized person to drive"
+        # Public Order Edge Case
+        "{failure to} produce insurance {identification}",
     ],
     "DUI": [
         "driving under the influence of alcohol",
