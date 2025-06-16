@@ -387,15 +387,18 @@ categories = {
         "{improper} loitering and prowling",
         "{charged_with} causing a public {disturbance} at the {place}",
         "{failure to} to respect the lawful order",
-        "{charged_with} {fighting} in public",
+        "{charged_with} {fighting} in a public {place}",
+        "{charged_with} {fighting}",
         "{charged_with} inducing panic",
         "{charged_with} causing a {severe} {disturbance} in a public {place}",
         "participated in a {severe} {disturbance}",
         "{charged_with} {harassing} a {victim} in a public {place}",
         "{charged_with} {harassing}",
+        "{charged_with} harassment in the {degree_level}",
         "{charged_with} causing a noise violation",
         "{improper} nudity disturbing passersby",
         "{charged_with} public indecency",
+        "engage or maintain nuisance",
         # Court Edge Case
         "{charged_with} causing a {disturbance} in a court of law",
         "{harassing} a judge or jury member",
@@ -406,6 +409,7 @@ categories = {
         # Noisiness
         "{charged_with} shouting too loudly by the {place}",
         "playing loud music by a {place}",
+        "{improper} sound reproduction",
         # Breaking urban rules
         "{failure to} to pay public transportation fare"
         "{charged_with} pedestrian violation",
@@ -423,6 +427,9 @@ categories = {
         "{charged_with} {improper} dumping of waste",
         "{improper} dumping",
         "{charged_with} {improper} curfew violation at night",
+        "{failure to} pay fare on the bus",
+        "{charged_with} interfering with public transportation",
+        "attempted to evade paying transit fare",
         # Domestic Assault Edge Case
         "{charged_with} having a loud domestic argument",
         "domestic argument {without} violence",
@@ -512,9 +519,11 @@ categories = {
         "{improper} distribution of items in a {prison} which are not drugs",
         "selling {improper} contraband in a {prison} but not {drug}",
         "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
+        "{conspiracy_to} provide {improper} object to an inmate - felony"
         # Communication Device Violation
         "{charged_with} tampering with a communication device in a {prison}",
         "{improper} use of a communication device in a {prison}",
+        "{charged_with} damaging or interrupting a communication device",
     ],
     "Illicit Business": [
         "{charged_with} illegal gambling near a {place}",
@@ -1115,7 +1124,7 @@ categories = {
         "{resisting} arrest by police",
         "{light} {resisting} arrest by an {officer}",
         "resist arrest",
-        "{resisting} an {officer} without violence",
+        "{resisting} an {officer} {without} violence",
         "obstructing being put under arrest by a {officer}",
         "{charged_with} {resisting} law enforcement - felony",
         "{resisting} arrest by an {officer} - felony",
@@ -1158,15 +1167,20 @@ categories = {
         "{failure to} give true name to an {officer}",
         "{charged_with} misrepresenting identity",
         "{charged_with} concealing identity",
+        "false {identification} to law enforcement",
+        "false {identification} to court",
+        "provide false {identification} information",
         # False Information
         "{charged_with} giving false information to an {officer}",
         "intentionally lied to an {officer} during an investigation",
         "{charged_with} making a false statement",
-        "{charged_with} making a false statement with no financial purpose",
-        "{charged_with} making a false statement for no particular purpose",
         "{improper} giving of fictitious information to an {officer}",
         "{charged_with} giving a false crime report",
-        # False Information Edge case
+        "making a false report of a violation of the criminal code",
+        # Fraud Edge Cases
+        "{charged_with} making a false statement with no financial purpose",
+        "{charged_with} making a false statement for no particular purpose",
+        # Court violation Edge case
         "{charged_with} giving false information in court",
         # Tampering with evidence
         "{improper} tampering with evidence at the {place}",
@@ -1179,6 +1193,7 @@ categories = {
         "{charged_with} destruction of evidence",
         "tampered with evidence while an {officer} was investigating",
         "{failure to} comply with {officer} instructions",
+        "attempted {failure to} comply with order or signal of {officer}",
         "{failure to} comply",
         "{failure to} comply with an {officer}'s investigation",
         "{charged_with} interfering with official acts by an {officer}",
@@ -1187,6 +1202,7 @@ categories = {
         "{charged_with} custodial interference",
         "{charged_with} obstructing official business",
         "{charged_with} hindering judicial proceedings",
+        "{charged_with} obstructing administration of law"
     ],
     "Traffic Driving": [
         "speeding near a {place}",
@@ -1392,7 +1408,7 @@ placeholder_options = {
                             "under the influence", "in an intoxicated state", "impaired"],
     "charged_with": ["charged with", "arrested for", "accused of", "indicted for", "under suspicion of"],
     "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to", "solicitation to"],
-    "without": ["without", "not with", "absent of", "lacking", "with no"],
+    "without": ["without", "without", "withou", "not with", "absent of", "lacking", "with no"],
     "reckless": ["dangerous", "careless", "negligent", "reckless", "irresponsible", "unsafe"],
     "invalid": ["suspended", "invalid", "expired", "revoked", "fake", "canceled"],
     "stolen_property": ["property", "handbag", "wallet", "valuables", "electronics", "personal belongings", "jewelry",
@@ -1481,4 +1497,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1200)  # Adjust as needed
