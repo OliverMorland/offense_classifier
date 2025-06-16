@@ -1099,7 +1099,16 @@ categories = {
         "ran away from {place} to evade arrest",
         "evaded law enforcement near a busy {place}",
         "attempted to escape while being transported in a police van",
-        "slipped out of custody during a {fight} at the station"
+        "slipped out of custody during a {fight} at the station",
+        "endangering others while attempting to elude an {officer}",
+        # Traffic Edge cases
+        "{charged_with} eluding by speeding over the limit",
+        "elude arrest with {motor_vehicle}",
+        "{improper} vehicular eluding",
+        # Obstructing Justice Edge cases
+        "{failure to} stop {motor_vehicle} for an {officer}",
+        "{failure to} stop driving at command of law enforcement",
+        "{failure to} to stop when {officer} signals",
     ],
     "Resisting Arrest": [
         "{resisting} arrest",
