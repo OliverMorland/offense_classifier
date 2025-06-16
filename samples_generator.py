@@ -223,6 +223,7 @@ categories = {
         "prowling around a {motor_vehicle} at night",
         "theft of a {motor_vehicle} from a dealership",
         "unlawfully driving away a {motor_vehicle}",
+        "{charged_with} entering a {motor_vehicle} with intent to commit theft",
         # Burglary Edge cases
         "{charged_with} theft of a {motor_vehicle} {without} breaking into it",
         "theft of a {motor_vehicle} but no break in",
