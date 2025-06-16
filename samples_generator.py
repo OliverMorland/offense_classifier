@@ -351,6 +351,7 @@ categories = {
         "{failure to} register as a sex offender",
         "{charged_with} not registering as a sex offender",
         "{charged_with} non support",
+        "nonsupport",
         "{failure to} provide child support as ordered by the court",
         "{failure to} appear on bond",
         # Failure to pay court fees
@@ -815,6 +816,7 @@ categories = {
         "{charged_with} {assault} {without} bodily injury",
         "{charged_with} domestic abuse",
         "{assault} on {family_member}",
+        "domestic {assault} with physical contact",
         "domestic {assault}",
         "domestic {assault} {without} injury caused",
         "{assault} on a {family_member} {without} body injury",
@@ -846,6 +848,7 @@ categories = {
         "{assault} - misdemeanor and not felony",
         # Public Order Edge Case
         "{charged_with} a violent domestic argument causing injury",
+        "assault and resist a {officer}",
     ],
     "Weapons Offense": [
         "{possessing} a firearm {without} a permit",
@@ -1143,9 +1146,11 @@ categories = {
         "{charged_with} {resisting} being placed in custody by a {officer}",
         "{charged_with} having resisted arrest",
         "resisted capture at {place} following arrest",
+        # Assault edge cases
         "{charged_with} having resisted arrest with no violence",
         "{resisting} apprehension by an {officer} without resort to violence",
         "{resisting} arrest but no violence",
+        "resist an {officer} {without} {assault}",
         # Taking officer's equipment
         "taking a communication device from an {officer}",
         "attempting to remove a device from an {officer}",
