@@ -109,6 +109,8 @@ categories = {
         "killed person in unclear circumstances"
     ],
     "Intimidation (Not Witness)": [
+        "stalking a {victim}",
+        "{charged_with} stalking",
         "{charged_with} intimidation",
         "{severe} intimidation",
         "intimidation of a {victim}",
@@ -126,6 +128,12 @@ categories = {
         "{charged_with} menacing behavior towards a {victim} with credible threat of violence",
         "{charged_with} threatening violence",
         "{conspiracy_to} intimidate a {victim}",
+        "{charged_with} making a terroristic threat of a {family_member}",
+        "making a terroristic threat to a {victim}",
+        "{charged_with} making a threat against the life of a {victim}",
+        "threaten with intent to terrorize a {family_member}",
+        # Forcible sex offense edge case
+        "{charged_with} coercion that was sexually motivated",
     ],
     "Intimidating a Witness": [
         "{charged_with} {intimidating} a witness",
@@ -278,6 +286,8 @@ categories = {
         "took a package from someone's porch {without} permission",
         "{charged_with} petty theft after taking a bicycle from a park",
         "{charged_with} theft of services",
+        "{charged_with} intent to obtain transportation without paying"
+        "{failure to} pay for a taxi fare",
         "theft by taking over ${numeric_quantity} and under ${numeric_quantity}",
         "{charged_with} theft under ${numeric_quantity} at a {place}",
         "theft over ${numeric_quantity}",
@@ -556,6 +566,9 @@ categories = {
         "{charged_with} damaging or interrupting a communication device",
     ],
     "Illicit Business": [
+        # General criminal activity
+        "{conspiracy to} commit racketeering",
+        # Gambling
         "{charged_with} illegal gambling near a {place}",
         "engaged in gambling at the {place}",
         "{improper} gambling",
@@ -572,12 +585,14 @@ categories = {
         "operating a secret gambling network in {place}",
         "implicated in {improper} high-roller gambling events at {place}",
         "witnessed at a clandestine gambling club in {place}",
+        # Unlicensed transit
         "{charged_with} {improper} soliciting of ride share services",
         "{charged_with} {improper} solicitation of rides",
         "{improper} solicitation",
         "{improper} selling of services with {invalid} license",
         "contracting with an {invalid} license",
         "{charged_with} contracting without a license",
+        # Prostitution
         "prostitution",
         "{charged_with} soliciting prostitution",
         "{charged_with} loitering and solicitation of sex acts",
@@ -600,6 +615,8 @@ categories = {
         "{possessing} explicit images of a {minor}",
         "{charged_with} {possessing} indecent images of a {minor}",
         "{conspiracy_to} {distribute} child pornography",
+        "{possessing} a sexual performance by a child",
+        "{possessing} a pornographic video of a {minor}",
     ],
     "All Other Offenses": [
         "{conspiracy_to} commit an offense",
@@ -613,6 +630,8 @@ categories = {
         "offenses at a {place}",
         "regular violator",
         "{charged_with} an unknown offense",
+        "criminal simulation",
+        "charge not specified",
         "{reckless} offenses",
         "{improper} offense",
         "{improper} repeat offender",
@@ -625,11 +644,13 @@ categories = {
         "{charged_with} ordinance violation",
         "{charged_with} violating local ordinance",
         "{charged_with} fishing without a permit",
+        "fish without a permit",
         "{charged_with} hunting without a license",
         "{improper} recreational fishing",
         "{improper} recreational hunting",
         "{possessing} wood that was unlawfully chopped down",
         "{charged_with} truancy",
+        "{charged_with} cruelty to animals",
     ],
     "Murder": [
         "intentionally killed another person",
@@ -1048,6 +1069,8 @@ categories = {
         "{charged_with} mail fraud",
         "{charged_with} fraudulent use of a telephone",
         "falsify business records",
+        "{charged_with} money laundering",
+        "{charged_with} {severe} money laundry",
         # Using a stolen card
         "{charged_with} fraudulent use of a {payment_card}",
         "{improper} use of {payment_card} under $1,500",
