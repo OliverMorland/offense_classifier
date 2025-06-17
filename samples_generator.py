@@ -409,7 +409,9 @@ categories = {
         "{charged_with} causing a noise violation",
         "{improper} nudity disturbing passersby",
         "{charged_with} public indecency",
+        "{charged_with} indecent exposure"
         "engage or maintain nuisance",
+        "{charged_with} making harassing phone calls to a member of the public",
         # Court Edge Case
         "{charged_with} causing a {disturbance} in a court of law",
         "{harassing} a judge or jury member",
@@ -417,6 +419,7 @@ categories = {
         # Street Gang
         "{charged_with} participating in a street gang",
         "{improper} gang activity",
+        "{charged_with} engaging in organized criminal activity",
         # Noisiness
         "{charged_with} shouting too loudly by the {place}",
         "playing loud music by a {place}",
@@ -430,17 +433,22 @@ categories = {
         "{charged_with} littering in a public {place}",
         "littering by a {place}",
         "{severe} littering",
+        "{charged_with} littering, first degree",
         "urinating or defecating by a {place}",
         "{charged_with} {improper} littering",
-        "{charged_with} leaving dog at large",
-        "{charged_with} not controlling dog by the {place}",
-        "{improper} control of dog",
         "{charged_with} {improper} dumping of waste",
         "{improper} dumping",
         "{charged_with} {improper} curfew violation at night",
         "{failure to} pay fare on the bus",
         "{charged_with} interfering with public transportation",
         "attempted to evade paying transit fare",
+        "{charged_with} placement of temporary signs at a {place} without obtaining the required permits",
+        "no person shall be in park after designated hours",
+        # Pets
+        "{charged_with} leaving dog at large",
+        "{charged_with} not controlling dog by the {place}",
+        "{charged_with} running at large",
+        "{improper} control of dog",
         # Domestic Assault Edge Case
         "{charged_with} having a loud domestic argument",
         "domestic argument {without} violence",
@@ -464,6 +472,9 @@ categories = {
         # Drug edge cases
         "{under_the_influence} by a non-drug substance",
         "{under_the_influence} of a substance that is not a drug",
+        # Drug Trafficking Edge Cases
+        "{charged_with} transporting {alcoholic_beverage}",
+        "{possessing} an {alcoholic_beverage} with intent to {distribute}",
     ],
     "Rioting": [
         "rioting",
@@ -480,6 +491,7 @@ categories = {
         "mobbing {officer} at a {place}",
     ],
     "Underage Offense": [
+        # Alcohol
         "{minor} possession of alcohol",
         "{minor} in possession of an {alcoholic_beverage}",
         "consumption of alcohol under the age limit",
@@ -501,12 +513,15 @@ categories = {
         "arrested {minor} for underage drinking near {place}",
         "found {minor} intoxicated near the {place} with {alcoholic_beverage}",
         "caught a {minor} carrying multiple bottles of alcohol in a backpack",
+        # Tobacco
         "{minor} possession of tobacco",
         "{minor} {possessing} tobacco",
         "{minor} smoking cigarettes",
         "possession of tobacco by a {minor}",
         "{charged_with} underage tobacco possession",
-        "{possessing} a {alcoholic_beverage} while underage 21"
+        "{possessing} a {alcoholic_beverage} while underage 21",
+        "{improper} transaction with a {minor} {minor_degree_level}",
+        "{charged_with} providing tobacco to a {minor}",
     ],
     "Public Institution Violation": [
         # Prison Violation
@@ -531,6 +546,7 @@ categories = {
         "selling {improper} contraband in a {prison} but not {drug}",
         "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
         "{conspiracy_to} provide {improper} object to an inmate - felony"
+        "{charged_with} contraband introduction {minor_degree_level}",
         # Communication Device Violation
         "{charged_with} tampering with a communication device in a {prison}",
         "{improper} use of a communication device in a {prison}",
@@ -561,6 +577,8 @@ categories = {
         "{charged_with} contracting without a license",
         "prostitution",
         "{charged_with} soliciting prostitution",
+        "{charged_with} loitering and solicitation of sex acts",
+        "{conspiracy_to} offer sex acts",
         "{improper} pimping",
         "{charged_with} operating a prostitution business",
         "{charged_with} operating a {improper} brothel"
@@ -982,6 +1000,7 @@ categories = {
         "{charged_with} throwing an object at a train",
         "{severe} terrorism",
         "{charged_with} street terrorism"
+        "criminal {disturbance} that endangers the public",
     ],
     "Arson": [
         "set fire to a building intentionally",
@@ -1081,6 +1100,7 @@ categories = {
         # Not paying tax
         "{failure to} file income tax",
         "{improper} income tax violation",
+        "{failure to} pay taxes due to state",
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
@@ -1207,6 +1227,7 @@ categories = {
         "{charged_with} making a false statement for no particular purpose",
         # Court violation Edge case
         "{charged_with} giving false information in court",
+        "{failure to} comply with order but that is not a court order",
         # Tampering with evidence
         "{improper} tampering with evidence at the {place}",
         "{charged_with} tampering with official records",
@@ -1227,7 +1248,12 @@ categories = {
         "{charged_with} custodial interference",
         "{charged_with} obstructing official business",
         "{charged_with} hindering judicial proceedings",
-        "{charged_with} obstructing administration of law"
+        "{charged_with} hindering prosecution of a felony",
+        "{charged_with} obstructing administration of law",
+        "{charged_with} interfering with an emergency medical technician",
+        # Arson Edge cases
+        "{charged_with} false fire alarm and calling the police",
+        "{charged_with} transmitting a false report of fire",
     ],
     "Traffic Driving": [
         "speeding near a {place}",
