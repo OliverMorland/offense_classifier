@@ -234,8 +234,10 @@ categories = {
         "driving off in a {motor_vehicle} that was not theirs",
         "prowling around a {motor_vehicle} at night",
         "theft of a {motor_vehicle} from a dealership",
+        "theft by unauthorized control",
         "unlawfully driving away a {motor_vehicle}",
         "{charged_with} entering a {motor_vehicle} with intent to commit theft",
+        "{charged_with} theft of means of transportation by control",
         # Burglary Edge cases
         "{charged_with} theft of a {motor_vehicle} {without} breaking into it",
         "theft of a {motor_vehicle} but no break in",
@@ -247,6 +249,7 @@ categories = {
         # General Property Theft
         "{conspiracy_to} commit larceny",
         "petty theft",
+        "misdemeanor theft",
         "retail theft",
         "{charged_with} theft",
         "{charged_with} theft by receiving",
@@ -284,7 +287,7 @@ categories = {
         "{charged_with} taking of property - felony",
         "{failure to} pay for services",
         "alter price of {stolen_property} in a store",
-        "{improper} use of a universal product code label in a store",
+        "{improper} use of a universal product code label",
         "shoplift alter price, less than ${numeric_quantity}",
         # Fraud Larceny edge cases
         "{charged_with} theft {without} having deceived the person",
