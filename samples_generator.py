@@ -954,6 +954,10 @@ categories = {
         "{conspiracy_to} commit misconduct with weapons",
         "{conspiracy_to} help a convicted criminal obtain a {firearm}",
         "{improper} possession of a {firearm} by a violent felon",
+        "brandished a {weapon} at a {place}",
+        # Drug Trafficking edge case
+        "{possessing} a {firearm} while committing a {drug} trafficking crime",
+        "{conspiracy_to} {distribute} firearms illegally",
     ],
     "Robbery": [
         "{severe} robbery",
@@ -1085,6 +1089,7 @@ categories = {
         "{improper} forgery of documents",
         "fabricated {improper} documents to deceive {victim}",
         "falsifying paperwork to purchase a {weapon}",
+        "false statements in application for a {firearm}",
         "falsifying paperwork to purchase a {motor_vehicle}",
         "{charged_with} knowingly giving {fraudulent} information for {financial_gain}",
         "{possessing} {fraudulent} documents to purchase a {weapon}",
@@ -1528,7 +1533,8 @@ placeholder_options = {
     "vehicle_part": ["rear view mirrors", "license plate", "rear lights", "front facing beams", "booster seat",
                      "engine", "plate", "tires", "brakes", "headlights", "tail lights", "brake lights", "equipment",
                      "gear box"],
-    "weapon": ["knife", "firearm", "weapon", "gun", "crossbow", "rifle", "lead pipe", "handgun", "deadly weapon"],
+    "weapon": ["knife", "firearm", "weapon", "gun", "crossbow", "rifle", "lead pipe", "handgun", "deadly weapon",
+               "metal knuckle"],
     "firearm": ["firearm", "automatic weapon", "gun", "rifle", "handgun", "automatic rifle", "pistol"],
     "victim": ["bystander", "shopkeeper", "employee", "person", "individual", "victim", "manager"],
     "negligence": ["negligence", "carelessness", "lack of care", "disregard", "omission"],
