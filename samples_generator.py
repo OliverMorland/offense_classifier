@@ -1644,9 +1644,15 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
     with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["text", "label"])
+        total_desired_samples = len(categories) * samples_per_category
+        total_templates_count = 0
         for label, templates in categories.items():
-            print(f"Generating {samples_per_category} examples for {label}...")
-            for _ in range(samples_per_category):
+            for _ in range(len(templates)):
+                total_templates_count += 1
+        for label, templates in categories.items():
+            category_samples_count = int((len(templates) / total_templates_count) * total_desired_samples)
+            print(f"Generating {category_samples_count} examples for {label}...")
+            for _ in range(category_samples_count):
                 template = random.choice(templates)
                 text = replace_placeholders(template)
                 if "}" in text or "{" in text:
@@ -1656,4 +1662,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1300)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
