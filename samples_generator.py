@@ -207,7 +207,10 @@ categories = {
         "illegally entered a school building with intent to steal",
         "attempted to pry open a locked door to steal property",
         "used tools to break into an apartment and steal electronics",
-        "{charged_with} breaking and entering at {place} to commit theft"
+        "{charged_with} breaking and entering at {place} to commit theft",
+        "{charged_with} home invasion with intent to steal",
+        "{charged_with} home invasion {minor_degree_level}",
+        "{charged_with} home invasion but was not armed with a {weapon}",
     ],
     "Motor Vehicle Theft": [
         # Motor vehicle theft
@@ -927,7 +930,8 @@ categories = {
         "{charged_with} conspiracy to commit robbery at a bank",
         "{charged_with} committing aggravated robbery at {place}",
         "{charged_with} attempting to rob a gas station clerk",
-        "{charged_with} home invasion robbery"
+        "{charged_with} home invasion robbery",
+        "{charged_with} armed home invasion",
     ],
     "Hit and Run with Bodily Injury": [
         "hit {victim} with a car and fled the scene",
