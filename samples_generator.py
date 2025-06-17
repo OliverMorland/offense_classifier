@@ -765,6 +765,7 @@ categories = {
     "Forcible Sex Offense": [
         "rape in the first degree",
         "first degree rape",
+        "{charged_with} criminal sexual conduct",
         "rape in the {minor_degree_level}",
         "{raped} an individual by force",
         "sexual assault of a person using violence",
@@ -783,13 +784,22 @@ categories = {
         "forcible sex offense",
         "{charged_with} sexual battery",
         "{charged_with} forcible sex offense at {place}",
+        "{conspiracy_to} commit rape",
+        # Sex with a minor
         "rape of a {minor}",
         "engaged in sexual relations with a {minor}",
         "communication with a {minor} for immoral purposes",
         "texting a {minor} for immoral reasons",
         "having sent texts to a {minor} for sexual reasons",
         "{charged_with} having communicated with a {minor} with improper intentions",
-        "{conspiracy_to} commit rape"
+        "indecency with a {minor}, felony",
+        "lewd acts upon a {minor}",
+        "carnal knowledge of a {minor}",
+        "indecent liberties with a {minor}",
+        "{charged_with} enticing a {minor}"
+        # Edge case
+        "{charged_with} lewd or lascivious  conduct, felony "
+        "{charged_with} offensive touching",
     ],
     "Aggravated Assault": [
         "aggravated assault",
