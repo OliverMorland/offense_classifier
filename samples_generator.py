@@ -587,7 +587,7 @@ categories = {
     ],
     "Illicit Business": [
         # General criminal activity
-        "{conspiracy to} commit racketeering",
+        "{conspiracy_to} commit racketeering",
         # Gambling
         "{charged_with} illegal gambling near a {place}",
         "engaged in gambling at the {place}",
@@ -1512,7 +1512,6 @@ categories = {
     "Immigration": [
         "{charged_with} reentry after deportation",
         "{improper} reentry of removed alien",
-        "{improper} reentry",
         "entered the country illegally",
         "violated immigration laws by overstaying a visa",
         "assisted someone in evading immigration authorities",
@@ -1532,7 +1531,15 @@ categories = {
         "crossed border without proper documentation",
         "harbored undocumented individuals at a {place}",
         "smuggled migrants across the united states border",
-        "arrived at port of entry with an invalid visa"
+        "arrived at port of entry with an invalid visa",
+        "{charged_with} attempting to enter the united states by wilfully concealing facts",
+        "{charged_with} concealment of facts about reentry",
+        "{conspiracy_to} aid aliens to evade and elude examination",
+        "{conspiracy_to} harbour illegal aliens",
+        "{conspiracy_to} smuggle illegal immigrants across the border",
+        # Edge cases
+        "{improper} entry",
+        "{improper} reentry",
     ]
 }
 
@@ -1645,4 +1652,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1300)  # Adjust as needed
