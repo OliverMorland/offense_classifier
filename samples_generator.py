@@ -858,6 +858,7 @@ categories = {
         "{assault} which {inflicted} minor injuries",
         "{charged_with} assault causing bodily injury",
         "{charged_with} aggravated assault",
+        "{assault} with {reckless} intent to injure {victim}",
         "{severe} domestic {assault} with bodily injury",
         "domestic {assault} causing injuries to body",
         "{assault} on {family_member} causing injuries",
@@ -924,12 +925,15 @@ categories = {
         "{charged_with} having {hit} a {officer} during arrest",
         "{assault} - {minor_degree_level}",
         "{charged_with} {assault} in the {minor_degree_level}",
+        # No injuries
         "{hit} someone in a {light} {fight} but caused no serious harm",
         "{charged_with} {assault} which {inflicted} no injuries",
         "got into a {fight} and shoved a person causing no injuries",
         "{charged_with} simple {assault} after pushing {victim} at {place}",
+        # No weapon
         "{assault} with no {firearm}",
         "{charged_with} {assault} without a {weapon}",
+        # No felony
         "{charged_with} non felonious {assault}",
         "{assault} but not felony",
         "{assault} - misdemeanor and not felony",
