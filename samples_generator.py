@@ -324,6 +324,8 @@ categories = {
         "fiddling with someone else's {vehicle_part}",
         "tampering with another {motor_vehicle}",
         "{charged_with} damaging a {vehicle_part}",
+        "malicious injury to property under $ 1000",
+        "malicious destruction of police property",
         # Trespass
         "{charged_with} trespass",
         "{charged_with} trespassing",
@@ -336,10 +338,14 @@ categories = {
         "{improper} entry into a private grounds",
         "{improper} entry into school premises but did not break in",
         "{failure to} leave a private property when asked",
+        "{charged_with} unauthorized entry to an operations area",
+        "{charged_with} entering a non commercial dwelling",
         # Leaving the scene of accident
         "criminal mischief",
+        "{charged_with} hit and run driving",
         "{charged_with} hit and run while causing property damage",
         "{charged_with} hit and run while damaging property",
+        "hit and run attended {motor_vehicle}",
         "walking away from the scene of a {motor_vehicle} accident",
         "{charged_with} departing the scene of a {motor_vehicle} accident",
         "{charged_with} leaving the scene of an accident not having caused injury",
@@ -351,6 +357,9 @@ categories = {
         # burglary tools
         "{charged_with} {possessing} burglary tools",
         "{possessing} tools for breaking and entering",
+        "{possessing} instruments of a crime",
+        "{charged_with} possession of instrument of crime",
+        "{charged_with} possession of burglar's implements"
     ],
     "Court Violation": [
         # Court Appearance
@@ -781,7 +790,8 @@ categories = {
         "{severe} abuse of a child",
         "causing {severe} harm to a child",
         "abused a child physically but not sexually",
-        "{charged_with} physically harming a child but not sexually"
+        "{charged_with} physically harming a child but not sexually",
+        "{charged_with} neglect of a dependent",
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -990,6 +1000,8 @@ categories = {
         "{charged_with} armed home invasion",
     ],
     "Hit and Run with Bodily Injury": [
+        "{charged_with} hit and run causing {severe} injuries",
+        "hit and run {without} property damage but with bodily injury",
         "hit {victim} with a car and fled the scene",
         "caused an accident and left the {victim} injured without providing help",
         "drove away after hitting a {victim} on a crosswalk",
@@ -1075,6 +1087,7 @@ categories = {
         "falsify business records",
         "{charged_with} money laundering",
         "{charged_with} {severe} money laundry",
+        "{charged_with} fraudulently obtaining food or lodging",
         # Using a stolen card
         "{charged_with} fraudulent use of a {payment_card}",
         "{improper} use of {payment_card} under $1,500",
@@ -1132,12 +1145,14 @@ categories = {
         "{improper} impersonation",
         "{charged_with} false personation",
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
+        "{charged_with} use of access account information without consent",
         # Theft by deception
         "{charged_with} theft by {deception}",
         "theft with {deception}",
         "stealing from a {victim} by deceiving them",
         "{charged_with} theft using deceptive means",
         "{charged_with} giving false information to obtain a refund",
+        "{failure to} work after being paid",
         # Not paying tax
         "{failure to} file income tax",
         "{improper} income tax violation",
