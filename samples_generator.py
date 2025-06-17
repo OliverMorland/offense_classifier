@@ -17,6 +17,7 @@ categories = {
         "{drug} trafficking - felony",
         "{conspiracy_to} traffic {drug}",
         "transporting {drug}",
+        "deliver or {distribute} {drug}",
         "selling of {drug}",
         "{drug} for sale",
         "{possessing} {drug} for sale",
@@ -41,6 +42,9 @@ categories = {
         "{prison} inmate trafficked {drug} - felony",
         "{charged_with} operation of a clandestine {drug} laboratory",
         "{charged_with} cultivating {drug}",
+        # Edge case
+        "{charged_with} trafficking offenses",
+        "{charged_with} a trafficking offense",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -372,6 +376,8 @@ categories = {
         "{charged_with} {failure to} make a court appearance",
         "{failure to} appear for booking or processing",
         "{failure to} appear on felony offense"
+        "being in contempt of court",
+        "contempt of court",
         # Registration
         "{failure to} notify about address change",
         "{failure to} verify current address",
@@ -391,9 +397,14 @@ categories = {
         "contempt of court order",
         "bail jumping",
         "not paying bail as agreed in court",
-        "being in contempt of court",
-        "contempt of court",
+        # Court Order Violations
         "not abiding by court order",
+        "{charged_with} violation of no contact order",
+        "{charged_with} violation of order of protection",
+        "{charged_with} violation of civil protection order",
+        "{charged_with} violation of temporary protection order"
+        "{charged_with} being a community custody or service violator"
+        "{charged_with} violation of parks recreation and community service"
         "{failure to} pay court-mandated fines on time",
         "{failure to} pay court ordered restitution",
         "{failure to} comply with a restraining order issued by the court",
@@ -792,6 +803,7 @@ categories = {
         "abused a child physically but not sexually",
         "{charged_with} physically harming a child but not sexually",
         "{charged_with} neglect of a dependent",
+        "{charged_with} cruelty to children",
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -921,6 +933,7 @@ categories = {
         "{charged_with} non felonious {assault}",
         "{assault} but not felony",
         "{assault} - misdemeanor and not felony",
+        "{charged_with} domestic battering on a {family_member}",
         # Public Order Edge Case
         "{charged_with} a violent domestic argument causing injury",
         "assault and resist a {officer}",
@@ -1217,6 +1230,7 @@ categories = {
         "{failure to} stop {motor_vehicle} for an {officer}",
         "{failure to} stop driving at command of law enforcement",
         "{failure to} to stop when {officer} signals",
+        "stop required on signal of {officer}",
     ],
     "Resisting Arrest": [
         "{resisting} arrest",
@@ -1283,7 +1297,7 @@ categories = {
         "{charged_with} making a false statement for no particular purpose",
         # Court violation Edge case
         "{charged_with} giving false information in court",
-        "{failure to} comply with order but that is not a court order",
+        "{failure to} comply with order from an {officer}",
         # Tampering with evidence
         "{improper} tampering with evidence at the {place}",
         "{charged_with} tampering with official records",
@@ -1324,6 +1338,7 @@ categories = {
         "{charged_with} vehicle speeding",
         "speeding in a {motor_vehicle} outside the {place}",
         "{reckless} driving",
+        "{reckless} driving that endangers others",
         "{charged_with} {reckless} driving that endangers others",
         "driving in a {reckless} way",
         "{charged_with} {reckless} driving",
@@ -1353,6 +1368,7 @@ categories = {
         "{charged_with} joyriding",
         "{improper} stopping or parking within 20 feet of a crosswalk",
         "{improper} parking by a sidewalk or driveway",
+        "{charged_with} not being parked within 18 inches of curb",
         "{improper} passing",
         "violation of temporary instruction permit",
         "{charged_with} operating an all terrain vehicle on a roadway",
@@ -1362,6 +1378,8 @@ categories = {
         "{failure to} yield from stop or yield controlled intersection",
         "first degree {reckless} driving",
         "{improper} backing up of a {motor_vehicle}",
+        "{charged_with} disregarding official traffic control device",
+        "{charged_with} exhibition driving",
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -1388,6 +1406,7 @@ categories = {
         "{motor_vehicle} owner was not wearing seat belt",
         "was not wearing a safety belt while operating {motor_vehicle}",
         "booster seat violation",
+        "{vehicle_part} violation",
         "all passengers did not have their safety belts on in the {motor_vehicle}",
         "{charged_with} not wearing a seat belt",
         "{charged_with} failing to wear a seat belt while driving",
@@ -1435,6 +1454,9 @@ categories = {
         "{failure to} provide financial responsibility of driver",
         "operating a {motor_vehicle} without required financial responsibility",
         "financial responsibility law",
+        "{failure to} reinstate a {motor_vehicle} license",
+        "drive after forfeit license",
+        "operate an uninsured {motor_vehicle}",
         # DUI Edge cases
         "driving under a {invalid} license due to driving {under_the_influence}",
         "driving under a {invalid} license due to failure to appear",
