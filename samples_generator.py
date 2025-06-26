@@ -388,6 +388,7 @@ categories = {
         "{failure to} register as a sex offender",
         "{charged_with} not registering as a sex offender",
         "{charged_with} non support",
+        "{improper} nonsupport of child by parent",
         "nonsupport",
         "{failure to} provide child support as ordered by the court",
         "{failure to} appear on bond",
@@ -405,7 +406,8 @@ categories = {
         "not abiding by court order",
         "{charged_with} violation of no contact order",
         "{charged_with} violation of order of protection",
-        "{charged_with} violation of civil protection order",
+        "{charged_with} being a community custody violator",
+        "{charged_with} violation of civil protection order, felony",
         "{charged_with} violation of temporary protection order"
         "{charged_with} being a community custody or service violator"
         "{charged_with} violation of parks recreation and community service"
@@ -586,6 +588,7 @@ categories = {
         "{conspiracy_to} provide {improper} object to an inmate - felony"
         "{charged_with} contraband introduction {minor_degree_level}",
         "{charged_with} bringing {improper} items into a {prison}, misdemeanor",
+        "inmate {possessing} tobacco, electronics or a phone",
         # Communication Device Violation
         "{charged_with} tampering with a communication device in a {prison}",
         "{improper} use of a communication device in a {prison}",
@@ -813,7 +816,7 @@ categories = {
         "abused a child physically but not sexually",
         "{charged_with} physically harming a child but not sexually",
         "{charged_with} neglect of a dependent",
-        "{charged_with} cruelty to children",
+        "{charged_with} cruelty to children"
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -1275,6 +1278,8 @@ categories = {
         "taking a communication device from an {officer}",
         "attempting to remove a device from an {officer}",
         "{improper} use of {officer} radio",
+        # Traffic Edge cases
+        "{resisting} arrest or search of owner's {motor_vehicle}",
     ],
     "Obstructing Justice": [
         # Identification
