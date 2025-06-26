@@ -85,6 +85,7 @@ categories = {
         "{charged_with} simple possession of {schedule_drug}",
         # Drug Trafficking Edge Case
         "possession with intent to use {drug} but not {distribute} it",
+        "simple possession or casual exchange of {drug}",
         # Weapons Offense Edge Case
         "possess {drug} while armed, a felony",
     ],
@@ -139,8 +140,12 @@ categories = {
         "making a terroristic threat to a {victim}",
         "{charged_with} making a threat against the life of a {victim}",
         "threaten with intent to terrorize a {family_member}",
+        "{charged_with} threatening to commit a crime",
         # Forcible sex offense edge case
         "{charged_with} coercion that was sexually motivated",
+        # Assault edge case
+        "threaten or intimidate with injury",
+        "threaten or intimidate with {assault}",
     ],
     "Intimidating a Witness": [
         "{charged_with} {intimidating} a witness",
@@ -274,12 +279,14 @@ categories = {
         "received stolen {stolen_property}",
         "{charged_with} theft",
         "{charged_with} larceny",
+        "grand theft in the {minor_degree_level}",
+        "{improper} taking",
         # Possessing stolen property
         "{possessing} stolen {stolen_property}",
         "{possessing} a stolen {payment_card}",
         "knowingly receiving or concealing {stolen_property}",
         # Stealing
-        "theft of {payment_card}"
+        "theft of {payment_card}",
         "stole a {payment_card} from a {victim}",
         "shoplifting {stolen_property} from a {place}",
         "shoplifted {stolen_property} - felony",
@@ -299,7 +306,6 @@ categories = {
         "theft by taking over ${numeric_quantity} and under ${numeric_quantity}",
         "{charged_with} theft under ${numeric_quantity} at a {place}",
         "theft over ${numeric_quantity}",
-        "{improper} taking",
         "{improper} taking of {stolen_property}",
         "{improper} appropriation of {stolen_property}",
         "{charged_with} taking of property - felony",
@@ -314,6 +320,8 @@ categories = {
         "unauthorized use of a {stolen_property} but did not sell it",
         "found with stolen {stolen_property} but did not covert it for {financial_gain}",
         "stole a {payment_card} but did not use it",
+        # Edge Cases
+        "{charged_with} theft of a {firearm}",
     ],
     "Other Property": [
         # Property Damage
@@ -368,6 +376,7 @@ categories = {
         "{possessing} instruments of a crime",
         "{charged_with} possession of instrument of crime",
         "{charged_with} possession of burglar's implements"
+        "{possessing} shoplifting gear",
     ],
     "Court Violation": [
         # Court Appearance
@@ -647,7 +656,7 @@ categories = {
         "{possessing} a sexual performance by a child",
         "{possessing} a pornographic video of a {minor}",
     ],
-    "All Other Offenses": [
+    "Ambiguous Offense": [
         "{conspiracy_to} commit an offense",
         "{charged_with} committing an unspecified offense",
         "{conspiracy_to} do something {improper}",
@@ -670,15 +679,27 @@ categories = {
         "conspiracy",
         "{minor_degree_level}",
         "unknown",
+        "{charged_with} an unspecified crime",
+        "{charged_with} an ambiguous offense",
         "{charged_with} ordinance violation",
         "{charged_with} violating local ordinance",
+        "{charged_with} truancy",
+    ],
+    "Recreational Violation": [
         "{charged_with} fishing without a permit",
         "fish without a permit",
         "{charged_with} hunting without a license",
         "{improper} recreational fishing",
         "{improper} recreational hunting",
         "{possessing} wood that was unlawfully chopped down",
-        "{charged_with} truancy",
+        "{improper} trafficking of wildlife",
+        "{charged_with} {improper} possession of wildlife",
+        "{charged_with} {improper} hunting of protected species",
+        "{charged_with} {improper} fishing in a protected area",
+        "{charged_with} poaching",
+        "{charged_with} {improper} trapping of animals",
+        "{charged_with} {improper} collection of plants",
+        "{charged_with} {improper} collection of wildlife",
         "{charged_with} cruelty to animals",
     ],
     "Murder": [
@@ -817,6 +838,9 @@ categories = {
         "{charged_with} physically harming a child but not sexually",
         "{charged_with} neglect of a dependent",
         "{charged_with} cruelty to children"
+        "{charged_with} injury to a child",
+        # Assault edge case
+        "{charged_with} {assault} of a child",
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -908,6 +932,8 @@ categories = {
         "{assault} - felony and not misdemeanor",
         "{assault} {minor_degree_level} felony",
         "{assault} in the first degree, felony",
+        # Child abuse edge case
+        "{assault} but not on a child",
     ],
     "Simple Assault": [
         "{charged_with} {assault}",
@@ -958,6 +984,7 @@ categories = {
         "assault and resist a {officer}",
     ],
     "Weapons Offense": [
+        "{possessing} {weapon}",
         "{possessing} a firearm {without} a permit",
         "possessed a {weapon} illegally",
         "{improper} possession of a regulated {firearm}",
@@ -1114,6 +1141,7 @@ categories = {
         "{conspiracy_to} commit fraud",
         "defrauded a {victim}",
         "{charged_with} retail fraud",
+        "{charged_with} falsification",
         "{charged_with} mail fraud",
         "{charged_with} fraudulent use of a telephone",
         "falsify business records",
@@ -1144,6 +1172,9 @@ categories = {
         "{charged_with} committing financial fraud by falsifying documents",
         "{charged_with} uttering and publishing",
         "uttering a false statement and published forged documents",
+        "{charged_with} uttering a false writing",
+        "{charged_with} forging a public record, felony",
+        "false application for driver's license or {identification}",
         # Traffic Edge cases
         "showed a {fraudulent} driver's license to a {officer}",
         "driving with a {fraudulent} license",
@@ -1159,6 +1190,7 @@ categories = {
         "{charged_with} using a {fraudulent} check",
         "{improper} theft of check",
         "{charged_with} theft of check of a {victim}",
+        "{charged_with} using checks with insufficient funds",
         # Identity Theft
         "{charged_with} {improper} theft of {identification}",
         "{severe} {identification} theft",
@@ -1166,6 +1198,7 @@ categories = {
         "{improper} use of another person's {identification}",
         "{improper} use of a {victim}'s {identification}",
         "{improper} use of false {identification}",
+        "falsely use name and date of birth of another",
         "using false {identification} for the purpose of fraud",
         "assisting in obtaining another person's {identification} illegally",
         "use of another person's {identification} without permission",
@@ -1178,6 +1211,7 @@ categories = {
         "{charged_with} false personation",
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
         "{charged_with} use of access account information without consent",
+        "giving false information with intent to be another actual person, misdemeanor",
         # Theft by deception
         "{charged_with} theft by {deception}",
         "theft with {deception}",
@@ -1345,6 +1379,8 @@ categories = {
         # Arson Edge cases
         "{charged_with} false fire alarm and calling the police",
         "{charged_with} transmitting a false report of fire",
+        # Fraud Edge cases
+        "{charged_with} false reporting but not falsification of documents",
     ],
     "Traffic Driving": [
         "speeding near a {place}",
@@ -1381,12 +1417,13 @@ categories = {
         "{improper} passing of another {motor_vehicle}",
         "{improper} passing of a yellow line",
         "{improper} texting {without} hands free cell phone while driving",
-        "{improper} reading of texts without using a hands free cell phone",
+        "{improper} reading of texts without using a hands free cell phone, misdemeanor",
+        "unlawful text, send or talk {without} handsfree cell phone",
         "operating a {motor_vehicle} whilst using a cell phone",
         "operators and chauffeurs must have be licensed",
         "{failure to} control a {motor_vehicle}",
         "{motor_vehicle} operator failed to control",
-        "{motor_vehicle} nuisance",
+        "{motor_vehicle} nuisance, misdemeanor",
         "{improper} violation of the light law",
         "{failure to} stop at a red light",
         "{charged_with} joyriding",
@@ -1527,6 +1564,8 @@ categories = {
         "operating a vehicle {under_the_influence} - refusal",
         "actual physical control of a {motor_vehicle} {under_the_influence}",
         "{charged_with} driving or being in actual physical control with an alcohol concentration",
+        "operating {under_the_influence}",
+        "{charged_with} driving with measurable controlled substance",
         #Traffic Edge Case
         "operation without being in reasonable control of {motor_vehicle}",
         # Underage edge case
@@ -1585,7 +1624,8 @@ placeholder_options = {
     "under_the_influence": ["under the influence of alcohol", "intoxicated", "drunk", "high",
                             "under the influence", "in an intoxicated state", "impaired"],
     "charged_with": ["charged with", "arrested for", "accused of", "indicted for", "under suspicion of"],
-    "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to", "solicitation to"],
+    "conspiracy_to": ["conspiracy to", "planned to", "plotting to", "attempting to", "intended to", "solicitation to",
+                      "accessory after the fact to", "aiding and abetting to"],
     "without": ["without", "without", "withou", "not with", "absent of", "lacking", "with no"],
     "reckless": ["dangerous", "careless", "negligent", "reckless", "irresponsible", "unsafe"],
     "invalid": ["suspended", "invalid", "expired", "revoked", "fake", "canceled"],
