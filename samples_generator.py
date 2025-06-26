@@ -28,7 +28,7 @@ categories = {
         "possess {drug} intention to {distribute}",
         "carrying {drug} with intention to {distribute}",
         "{possessing} {drug} with purpose to {distribute}",
-        "transport {drug} intent to {distribute}",
+        "transport {drug} intent to {distribute}, {numeric_quantity} grams or more",
         "{charged_with} transport of {drug}",
         "selling {drug} by the {place}",
         "carrying {drug} for sale at a {place}",
@@ -45,6 +45,8 @@ categories = {
         # Edge case
         "{charged_with} trafficking offenses",
         "{charged_with} a trafficking offense",
+        "sell or deliver within {numeric_quantity} yards of a {place}",
+        "{possessing} a controlled substance, {drug}, with intent to deliver {numeric_quantity} grams or more",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -107,6 +109,7 @@ categories = {
         "{charged_with} unspecified {drug} offense",
         "{charged_with} a controlled substance violation"
         "{charged_with} a misdemeanor of {possessing} drug paraphernalia",
+        "{charged_with} inhalation of vapors or volatile chemical",
     ],
     "Unspecified Manslaughter": [
         "killed another person in an incident that remains unclear",
@@ -405,13 +408,6 @@ categories = {
         "{failure to} register as a sex offender",
         "{charged_with} not registering as a sex offender",
         # Failure to pay
-        "{failure to} pay",
-        "nonsupport",
-        "{failure to} provide child support as ordered by the court",
-        "{charged_with} {failure to} pay child support",
-        "child support, {failure to} to pay",
-        "{charged_with} non support",
-        "{improper} nonsupport of child by parent",
         "{failure to} pay court-mandated fines on time",
         "{failure to} pay court ordered restitution",
         "not paying bail as agreed in court",
@@ -435,6 +431,15 @@ categories = {
         "violated terms of probation by missing check-ins",
         "criminal contempt of a domestic violence protective order",
         "{failure to} check in with a parole officer as required",
+    ],
+    "Non Support": [
+        "{failure to} pay",
+        "nonsupport",
+        "{failure to} provide child support as ordered by the court",
+        "{charged_with} {failure to} pay child support",
+        "child support, {failure to} to pay",
+        "{charged_with} non support",
+        "{improper} nonsupport of child by parent",
     ],
     "Disorderly Conduct": [
         # Disorderly behaviour
@@ -470,8 +475,15 @@ categories = {
         "{charged_with} shouting too loudly by the {place}",
         "playing loud music by a {place}",
         "{improper} sound reproduction",
+        # Domestic Assault Edge Case
+        "{charged_with} having a loud domestic argument",
+        "domestic argument {without} violence",
+    ],
+    "Breaking Urban Rules": [
         # Breaking urban rules
         "{failure to} to pay public transportation fare"
+        "{failure to} pay fare on the bus",
+        "attempted to evade paying transit fare",
         "{charged_with} pedestrian violation",
         "{improper} obstruction of a passageway",
         "{charged_with} jaywalking",
@@ -485,9 +497,7 @@ categories = {
         "{charged_with} {improper} dumping of waste",
         "{improper} dumping",
         "{charged_with} {improper} curfew violation at night",
-        "{failure to} pay fare on the bus",
         "{charged_with} a misdemeanor, interfering with public transportation",
-        "attempted to evade paying transit fare",
         "{charged_with} placement of temporary signs at a {place} without obtaining the required permits",
         "no person shall be in park after designated hours",
         # Pets
@@ -496,9 +506,6 @@ categories = {
         "{charged_with} running at large",
         "{improper} control of dog",
         "{failure to} have a vaccination certificate for a pet",
-        # Domestic Assault Edge Case
-        "{charged_with} having a loud domestic argument",
-        "domestic argument {without} violence",
     ],
     "Public Intoxication": [
         # Alcohol-related offenses
@@ -864,6 +871,7 @@ categories = {
         "{charged_with} sexual battery",
         "{charged_with} forcible sex offense at {place}",
         "{conspiracy_to} commit rape",
+        "{charged_with} sodomy, {minor_degree_level}",
         # Sex with a minor
         "rape of a {minor}",
         "engaged in sexual relations with a {minor}",
@@ -879,6 +887,7 @@ categories = {
         # Edge case
         "{charged_with} lewd or lascivious  conduct, felony "
         "{charged_with} offensive touching",
+        "{charged_with} trafficking for sexual servitude - felony",
     ],
     "Aggravated Assault": [
         "aggravated assault",
