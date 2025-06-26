@@ -169,7 +169,8 @@ class OffenseClassifier:
                              "Public Institution Violation", "Public Intoxication", "Disorderly Conduct"],
             'Traffic': ["Traffic Driving", "Traffic Vehicle", "Traffic Paperwork"],
             'Larceny/Motor Vehicle Theft': ["Larceny", "Motor Vehicle Theft"],
-            'All Other Offenses': ["Underage Offense", "Non-Drug Illicit Items"]
+            'All Other Offenses': ["Underage Offense", "Non-Drug Illicit Items", "Ambiguous Offense",
+                                   "Recreational Violation"]
         }
         for key, categories in dictionary.items():
             for category in categories:
@@ -297,5 +298,6 @@ if __name__ == "__main__":
         else:
             percentage = 0
         print(f"{category}: {score}/{total}, {percentage:.0f}%")
+
 
 
