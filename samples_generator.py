@@ -146,6 +146,9 @@ categories = {
         # Assault edge case
         "threaten or intimidate with injury",
         "threaten or intimidate with {assault}",
+        # Edge case
+        "threatened a judge, prosecutor or {officer}",
+        "made threats to kill a {family_member}",
     ],
     "Intimidating a Witness": [
         "{charged_with} {intimidating} a witness",
@@ -342,6 +345,7 @@ categories = {
         "{charged_with} damaging a {vehicle_part}",
         "malicious injury to property under $ 1000",
         "malicious destruction of police property",
+        "owner or tenant's {failure to} keep property clean",
         # Trespass
         "{charged_with} trespass",
         "{charged_with} trespassing",
@@ -460,6 +464,7 @@ categories = {
         "{charged_with} indecent exposure"
         "engage or maintain nuisance",
         "{charged_with} making harassing phone calls to a member of the public",
+        "harassing phone calls",
         # Court Edge Case
         "{charged_with} causing a {disturbance} in a court of law",
         "{harassing} a judge or jury member",
@@ -497,6 +502,7 @@ categories = {
         "{charged_with} not controlling dog by the {place}",
         "{charged_with} running at large",
         "{improper} control of dog",
+        "{failure to} have a vaccination certificate for a pet",
         # Domestic Assault Edge Case
         "{charged_with} having a loud domestic argument",
         "domestic argument {without} violence",
@@ -1391,7 +1397,7 @@ categories = {
         "{charged_with} driving at {improper} speeds",
         "took part in a race with in the middle of a busy street",
         "drove in speed competition by the {place}",
-        "basic speed rule, driving {motor_vehicle} faster than posted",
+        "basic speed rule, faster than posted",
         "{charged_with} participating in a speeding contest on the roads by the {place}",
         "{charged_with} vehicle speeding, misdemeanor",
         "speeding in a {motor_vehicle} outside the {place}",
@@ -1468,6 +1474,7 @@ categories = {
         "was not wearing a safety belt while operating {motor_vehicle}",
         "booster seat violation",
         "{vehicle_part} violation",
+        "{vehicle_part} violation, misdemeanor",
         "all passengers did not have their safety belts on in the {motor_vehicle}",
         "{charged_with} not wearing a seat belt",
         "{charged_with} failing to wear a seat belt while driving",
