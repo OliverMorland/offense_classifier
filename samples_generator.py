@@ -214,6 +214,8 @@ categories = {
         "forced entry into a building to take {stolen_property}",
         "{improper} entry into a {motor_vehicle}",
         "breaking and entering a {motor_vehicle} by a {place}",
+        "{charged_with} forcing entry into a {motor_vehicle}",
+        "{charged_with} entering a {motor_vehicle} with intent to commit theft",
         "{improper} entry into a building",
         "caught breaking into a private property to steal {stolen_property}",
         "{charged_with} a misdemeanor, second-degree burglary for entering a residence unlawfully",
@@ -262,7 +264,6 @@ categories = {
         "caught with a stolen {motor_vehicle} in possession",
         "driving a stolen {motor_vehicle}, misdemeanor",
         "unlawfully driving away a {motor_vehicle}",
-        "{charged_with} entering a {motor_vehicle} with intent to commit theft",
         "{charged_with} theft of means of transportation by control",
         # Burglary Edge cases
         "{charged_with} theft of a {motor_vehicle} {without} breaking into it",
@@ -386,37 +387,38 @@ categories = {
         # Court Appearance
         "{failure to} appear in court for a scheduled hearing",
         "{failure to} appear",
+        "{failure to} appear {minor_level_degree}",
         "{failure to} appear for a court date",
         "{failure to} appear before court",
-        "{charged_with} {failure to} comply with court order",
-        "{charged_with} {failure to} comply with a protective order",
         "{charged_with} {failure to} make a court appearance",
         "{failure to} appear for booking or processing",
         "{failure to} appear on felony offense"
         "being in contempt of court",
         "contempt of court",
+        "{failure to} appear on bond",
         # Registration
+        "{failure to} register",
+        "{failure to} comply with sexual offender registration"
+        "predatory offender who knowingly violates registration"
         "{failure to} notify about address change",
         "{failure to} verify current address",
         "{failure to} register as a sex offender",
         "{charged_with} not registering as a sex offender",
-        "{charged_with} non support",
-        "{improper} nonsupport of child by parent",
+        # Failure to pay
+        "{failure to} pay",
         "nonsupport",
         "{failure to} provide child support as ordered by the court",
-        "{failure to} appear on bond",
-        "{failure to} comply with sexual offender registration"
-        "predatory offender who knowingly violates registration"
-        # Failure to pay court fees
         "{charged_with} {failure to} pay child support",
-        "violated terms of probation by missing check-ins",
-        "disregarded court order to stay away from a victim",
-        "criminal contempt of a domestic violence protective order",
-        "contempt of court order",
-        "bail jumping",
+        "child support, {failure to} to pay",
+        "{charged_with} non support",
+        "{improper} nonsupport of child by parent",
+        "{failure to} pay court-mandated fines on time",
+        "{failure to} pay court ordered restitution",
         "not paying bail as agreed in court",
+        "bail jumping",
         # Court Order Violations
         "not abiding by court order",
+        "contempt of court order",
         "{charged_with} violation of no contact order",
         "{charged_with} violation of order of protection",
         "{charged_with} being a community custody violator",
@@ -424,24 +426,15 @@ categories = {
         "{charged_with} violation of temporary protection order"
         "{charged_with} being a community custody or service violator"
         "{charged_with} violation of parks recreation and community service"
-        "{failure to} pay court-mandated fines on time",
-        "{failure to} pay court ordered restitution",
         "{failure to} comply with a restraining order issued by the court",
-        "skipped a mandated court-ordered counseling session",
-        "violated terms of release by traveling out of state",
-        "ignored a subpoena to testify in a legal proceeding",
-        "missed compulsory community service ordered by the judge",
-        "{failure to} check in with a parole officer as required",
-        "ignored a protective order requiring no contact with a {family_member}",
-        "attempted to contact a witness despite a court no-contact order",
-        "refused to appear for jury duty after being summoned",
-        "did not submit court-ordered documentation by the specified deadline",
-        "breached the conditions of a plea agreement",
         "attempted to influence a witness in violation of court directives",
-        "skipped scheduled drug testing mandated by the court"
-        # Edge cases
-        "{failure to} pay",
-        "{failure to} register",
+        "skipped scheduled drug testing mandated by the court",
+        "{charged_with} {failure to} comply with court order",
+        "{charged_with} {failure to} comply with a protective order",
+        "disregarded court order to stay away from a victim",
+        "violated terms of probation by missing check-ins",
+        "criminal contempt of a domestic violence protective order",
+        "{failure to} check in with a parole officer as required",
     ],
     "Disorderly Conduct": [
         # Disorderly behaviour
