@@ -1141,7 +1141,6 @@ categories = {
     ],
     "Fraud": [
         # General fraud
-        "engaged in {severe} identity theft for {financial_gain}",
         "defrauded a {victim} out of money through false promises",
         "fraud",
         "{conspiracy_to} commit fraud",
@@ -1160,6 +1159,7 @@ categories = {
         "operated a {payment_card} scam at {place}",
         "fraudulently used a stolen {payment_card} to make a purchase",
         "{charged_with} unauthorized use of a stolen {payment_card} to purchase goods worth ${numeric_quantity}",
+        "{charged_with} {payment_card} abuse",
         # Forgery
         "used {fraudulent} currency at {place}",
         "submitted {fraudulent} tax returns",
@@ -1197,7 +1197,21 @@ categories = {
         "{improper} theft of check",
         "{charged_with} theft of check of a {victim}",
         "{charged_with} using checks with insufficient funds",
+        # Theft by deception
+        "{charged_with} theft by {deception}",
+        "theft with {deception}",
+        "stealing from a {victim} by deceiving them",
+        "{charged_with} theft using deceptive means",
+        "{charged_with} giving false information to obtain a refund",
+        "{failure to} work after being paid",
+        # Not paying tax
+        "{failure to} file income tax",
+        "{improper} income tax violation",
+        "{failure to} pay taxes due to state",
+    ],
+    "Identity Theft": [
         # Identity Theft
+        "engaged in {severe} identity theft for {financial_gain}",
         "{charged_with} {improper} theft of {identification}",
         "{severe} {identification} theft",
         "{charged_with} using another person's {identification} for criminal purposes",
@@ -1214,21 +1228,12 @@ categories = {
         "{possessing} {identification} to commit forgery",
         "{conspiracy_to} impersonate another",
         "{improper} impersonation",
+        "impersonating a {victim}, misdemeanor",
         "{charged_with} false personation",
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
         "{charged_with} use of access account information without consent",
         "giving false information with intent to be another actual person, misdemeanor",
-        # Theft by deception
-        "{charged_with} theft by {deception}",
-        "theft with {deception}",
-        "stealing from a {victim} by deceiving them",
-        "{charged_with} theft using deceptive means",
-        "{charged_with} giving false information to obtain a refund",
-        "{failure to} work after being paid",
-        # Not paying tax
-        "{failure to} file income tax",
-        "{improper} income tax violation",
-        "{failure to} pay taxes due to state",
+        "misuse of {identification}"
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
