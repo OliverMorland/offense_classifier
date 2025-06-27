@@ -47,6 +47,7 @@ categories = {
         "{charged_with} a trafficking offense",
         "sell or deliver within {numeric_quantity} yards of a {place}",
         "{possessing} a controlled substance, {drug}, with intent to deliver {numeric_quantity} grams or more",
+        "{possessing} with intent, {numeric_quantity} grams of {drug}"
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -152,6 +153,7 @@ categories = {
         # Edge case
         "threatened a judge, prosecutor or {officer}",
         "made threats to kill a {family_member}",
+        "threaten to use a {weapon} - felony",
     ],
     "Intimidating a Witness": [
         "{charged_with} {intimidating} a witness",
@@ -1745,4 +1747,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1000)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
