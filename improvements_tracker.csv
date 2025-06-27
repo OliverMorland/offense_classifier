@@ -1,0 +1,22 @@
+Category,Score (Fraud Split),Score(Public Order and Court Violation)
+Traffic,85%,83%
+Unspecified Drug Offense,16%,18%
+Drug Trafficking,76%,82%
+Court Violation,86%,86%
+Public Order,82%,81%
+Simple Assault,68%,66%
+Fraud,81%,80%
+DUI,81%,81%
+Larceny/Motor Vehicle Theft,62%,62%
+Drug Possession,76%,75%
+All Other Offenses,40%,38%
+Forcible Sex Offense,86%,88%
+Aggravated Assault,64%,70%
+Burglary,51%,66%
+Other Property,71%,67%
+Escape/Flight,75%,73%
+Child Abuse,64%,45%
+Immigration,95%,94%
+Intimidation (Not Witness),83%,80%
+Robbery,58%,58%
+Weapons Offense,69%,75%
