@@ -332,7 +332,30 @@ categories = {
         # Edge Cases
         "{charged_with} theft of a {firearm}",
     ],
-    "Other Property": [
+    "Trespass": [
+        # Trespass
+        "{charged_with} trespass",
+        "{charged_with} trespassing",
+        "{charged_with} trespassing on {place}",
+        "criminal trespass on a private property",
+        "{charged_with} criminal trespass on private property",
+        "{charged_with} criminal mischief, misdemeanor",
+        "unauthorized entry into a private {place}",
+        "{improper} entry into a private grounds, misdemeanor",
+        "{improper} entry into school premises but did not break in",
+        "{failure to} leave a private property when asked",
+        "entered into a private property and {failure to} leave when notice given",
+        "{charged_with} unauthorized entry to an operations area",
+        "{charged_with} entering a non commercial dwelling",
+        # burglary tools
+        "{charged_with} {possessing} burglary tools",
+        "{possessing} tools for breaking and entering",
+        "{possessing} instruments of a crime",
+        "{charged_with} possession of instrument of crime",
+        "{charged_with} possession of burglar's implements"
+        "{possessing} shoplifting gear",
+    ],
+    "Property Damage": [
         # Property Damage
         "vandalized a private property by spray painting",
         "using graffiti to deface a property",
@@ -352,21 +375,7 @@ categories = {
         "malicious injury to property under $ 1000",
         "malicious destruction of police property",
         "owner or tenant's {failure to} keep property clean",
-        # Trespass
-        "{charged_with} trespass",
-        "{charged_with} trespassing",
-        "{charged_with} trespassing on {place}",
-        "criminal trespass on a private property",
-        "{charged_with} criminal trespass on private property",
-        "{charged_with} criminal mischief, misdemeanor",
         "{charged_with} tampering with property of a {victim}",
-        "unauthorized entry into a private {place}",
-        "{improper} entry into a private grounds, misdemeanor",
-        "{improper} entry into school premises but did not break in",
-        "{failure to} leave a private property when asked",
-        "entered into a private property and {failure to} leave when notice given",
-        "{charged_with} unauthorized entry to an operations area",
-        "{charged_with} entering a non commercial dwelling",
         # Leaving the scene of accident
         "criminal mischief",
         "{charged_with} hit and run driving",
@@ -381,13 +390,6 @@ categories = {
         "fleeing the scene of an accident after damaging a {motor_vehicle}",
         "{failure to} report an accident",
         "{failure to} stop at accident",
-        # burglary tools
-        "{charged_with} {possessing} burglary tools",
-        "{possessing} tools for breaking and entering",
-        "{possessing} instruments of a crime",
-        "{charged_with} possession of instrument of crime",
-        "{charged_with} possession of burglar's implements"
-        "{possessing} shoplifting gear",
     ],
     "Court Violation": [
         # Court Appearance
@@ -607,6 +609,8 @@ categories = {
         "{charged_with} contraband introduction {minor_degree_level}",
         "{charged_with} bringing {improper} items into a {prison}, misdemeanor",
         "inmate {possessing} tobacco, electronics or a phone",
+        # Weapons offense edge case
+        "{possessing} a prohibited object in a {prison} but not a weapon",
         # Communication Device Violation
         "{charged_with} tampering with a communication device in a {prison}",
         "{improper} use of a communication device in a {prison}",
@@ -848,9 +852,11 @@ categories = {
         "{charged_with} neglect of a dependent",
         "{charged_with} cruelty to children"
         "{charged_with} injury to a child",
+        "endangering the welfare of a {minor} {minor_degree_level}",
         # Assault edge case
         "{charged_with} {assault} of a child",
         "{severe} {assault} with injury to a child",
+        "{assault} on a {minor}",
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -1042,6 +1048,12 @@ categories = {
         # Drug Trafficking edge case
         "{possessing} a {firearm} while committing a {drug} trafficking crime",
         "{conspiracy_to} {distribute} firearms illegally",
+        # Public Institution Edge Case
+        "felon {possessing} a {weapon} in a {prison}",
+        # DUI edge case
+        "{improper} handling of a {firearm} in a {motor_vehicle}",
+        # Drug Possession Edge Case
+        "felon or addict {possessing} a {firearm}",
     ],
     "Robbery": [
         "{severe} robbery",

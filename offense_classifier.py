@@ -174,6 +174,7 @@ class OffenseClassifier:
                                    "Recreational Violation"],
             'Fraud': ["Identity Theft", "Fraud"],
             'Court Violation': ["Court Violation", "Non Support"],
+            'Other Property': ["Property Damage", "Trespass"],
         }
         for key, categories in dictionary.items():
             for category in categories:
