@@ -362,6 +362,7 @@ categories = {
         "{improper} entry into a private grounds, misdemeanor",
         "{improper} entry into school premises but did not break in",
         "{failure to} leave a private property when asked",
+        "entered into a private property and {failure to} leave when notice given",
         "{charged_with} unauthorized entry to an operations area",
         "{charged_with} entering a non commercial dwelling",
         # Leaving the scene of accident
@@ -390,7 +391,7 @@ categories = {
         # Court Appearance
         "{failure to} appear in court for a scheduled hearing",
         "{failure to} appear",
-        "{failure to} appear {minor_level_degree}",
+        "{failure to} appear {minor_degree_level}",
         "{failure to} appear for a court date",
         "{failure to} appear before court",
         "{charged_with} {failure to} make a court appearance",
@@ -847,6 +848,7 @@ categories = {
         "{charged_with} injury to a child",
         # Assault edge case
         "{charged_with} {assault} of a child",
+        "{severe} {assault} with injury to a child",
     ],
     "Forcible Sex Offense": [
         "rape in the first degree",
@@ -941,7 +943,8 @@ categories = {
         "{assault} {minor_degree_level} felony",
         "{assault} in the first degree, felony",
         # Child abuse edge case
-        "{assault} but not on a child",
+        "{assault} with injuries but not on a child",
+        "{severe} assault on a {family_member} but not a minor",
     ],
     "Simple Assault": [
         "{charged_with} {assault}",
@@ -950,15 +953,11 @@ categories = {
         "{charged_with} {assault} as a misdemeanor",
         "{charged_with} {assault} that was not {severe}"
         "{assault} {without} bodily harm",
-        "{charged_with} {assault} {without} bodily injury",
         "{charged_with} domestic abuse",
         "{assault} on {family_member}",
         "domestic {assault} with physical contact",
         "domestic {assault}",
-        "domestic {assault} {without} injury caused",
-        "{assault} on a {family_member} {without} body injury",
         "{charged_with} domestic violence",
-        "{assault} {without} a {weapon}",
         "{assault} in the {minor_degree_level}",
         "{minor_degree_level} {assault}",
         "{charged_with} {minor_degree_level} {assault}",
@@ -966,7 +965,6 @@ categories = {
         "{charged_with} simple {assault}",
         "{charged_with} domestic {assault}",
         "{charged_with} minor {assault}",
-        "{light} {assault}",
         "{assault} on a {officer}",
         "resisting an {officer} with violence",
         "violently resisted arrest by an {officer}",
@@ -975,6 +973,10 @@ categories = {
         "{assault} - {minor_degree_level}",
         "{charged_with} {assault} in the {minor_degree_level}",
         # No injuries
+        "domestic {assault} {without} injury caused",
+        "{charged_with} {assault} {without} bodily injury",
+        "{assault} on a {family_member} {without} body injury",
+        "{assault} {without} causing injuries",
         "{hit} someone in a {light} {fight} but caused no serious harm",
         "{charged_with} {assault} which {inflicted} no injuries",
         "got into a {fight} and shoved a person causing no injuries",
@@ -982,6 +984,7 @@ categories = {
         # No weapon
         "{assault} with no {firearm}",
         "{charged_with} {assault} without a {weapon}",
+        "{assault} {without} a {weapon}",
         # No felony
         "{charged_with} non felonious {assault}",
         "{assault} but not felony",
@@ -990,6 +993,8 @@ categories = {
         # Public Order Edge Case
         "{charged_with} a violent domestic argument causing injury",
         "assault and resist a {officer}",
+        # No Child
+        "{assault} but not on a {minor}",
     ],
     "Weapons Offense": [
         "{possessing} {weapon}",
@@ -1291,12 +1296,16 @@ categories = {
         # Traffic Edge cases
         "{charged_with} eluding by speeding over the limit",
         "elude arrest with {motor_vehicle}, misdemeanor",
+        "operating a {motor_vehicle} to evade arrest",
         "{improper} vehicular eluding",
         # Obstructing Justice Edge cases
         "{failure to} stop {motor_vehicle} for an {officer}",
         "{failure to} stop driving at command of law enforcement",
         "{failure to} to stop when {officer} signals",
         "stop required on signal of {officer}",
+        # Edge case
+        "{charged_with} evading arrest with endangerment",
+        "fugitive from justice",
     ],
     "Resisting Arrest": [
         "{resisting} arrest",
@@ -1736,4 +1745,4 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
 
 # Example usage
 if __name__ == "__main__":
-    create_dataset("datasets/samples.csv", samples_per_category=1100)  # Adjust as needed
+    create_dataset("datasets/samples.csv", samples_per_category=1000)  # Adjust as needed
