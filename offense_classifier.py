@@ -302,5 +302,24 @@ if __name__ == "__main__":
             percentage = 0
         print(f"{category}: {score}/{total}, {percentage:.0f}%")
 
+    try:
+        file_path = "new_result_percentages.csv"
+        with open(file_path, mode='w', newline='', encoding='utf-8') as csv_file:
+            column_headers = ["Category", "Score"]
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow(column_headers)
+            for category, total in totals.items():
+                score = score_board[category]
+                if total > 0:
+                    percentage = (score / total) * 100
+                else:
+                    percentage = 0
+                data = [category, f"{percentage:.0f}%"]
+                csv_writer.writerow(data)
+        print(f"Data successfully written to {file_path}")
+    except IOError as e:
+        print(f"Error writing to file: {e}")
+
+
 
 
