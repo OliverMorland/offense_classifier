@@ -1004,7 +1004,7 @@ categories = {
         # No Child
         "{assault} but not on a {minor}",
     ],
-    "Weapons Offense": [
+    "Weapons Offenses": [
         "{possessing} {weapon}",
         "{possessing} a firearm {without} a permit",
         "possessed a {weapon} illegally",
@@ -1625,7 +1625,7 @@ categories = {
         "{improper} crossing at border",
         "aided {improper} entry into the usa",
         "evaded border security",
-        "{charged_with} evasion of border {officer}"
+        "{charged_with} evasion of border {officer}",
         "smuggling of migrants",
         "{improper} migration",
         "crossed border without proper documentation",
@@ -1749,12 +1749,21 @@ def create_dataset(output_file="datasets/samples.csv", samples_per_category=1500
         for label, templates in categories.items():
             category_samples_count = int((len(templates) / total_templates_count) * total_desired_samples)
             print(f"Generating {category_samples_count} examples for {label}...")
-            for _ in range(category_samples_count):
-                template = random.choice(templates)
+            counter = 0
+            while counter < category_samples_count:
+                modulo = counter % len(templates)
+                template = templates[modulo]
                 text = replace_placeholders(template)
                 if "}" in text or "{" in text:
                     print(f"Warning: Placeholder not replaced in template: {template}")
                 writer.writerow([text, label])
+                counter += 1
+            # for _ in range(category_samples_count):
+            #     template = random.choice(templates)
+            #     text = replace_placeholders(template)
+            #     if "}" in text or "{" in text:
+            #         print(f"Warning: Placeholder not replaced in template: {template}")
+            #     writer.writerow([text, label])
 
 
 # Example usage
