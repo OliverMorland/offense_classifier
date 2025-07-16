@@ -186,7 +186,7 @@ class OffenseClassifier:
         clues = ["parties", "habitual violator",
                  "expulsion", "attempt to commit an offense",
                  "unknown offense", "enterprise corruption", "accessory after the fact",
-                 "disturbing a school function"]
+                 "disturbing a school function", "runaway"]
         for clue in clues:
             if clue in input_text.lower():
                 return True

@@ -47,7 +47,7 @@ categories = {
         "{charged_with} a trafficking offense",
         "sell or deliver within {numeric_quantity} yards of a {place}",
         "{possessing} a controlled substance, {drug}, with intent to deliver {numeric_quantity} grams or more",
-        "{possessing} with intent, {numeric_quantity} grams of {drug}"
+        "{possessing} with intent, {numeric_quantity} grams of {drug}",
     ],
     "Drug Possession": [
         "consume {drug} for personal use",
@@ -108,7 +108,7 @@ categories = {
         "using materials that make drugs",
         "{charged_with} possessing paraphernalia for drugs",
         "{charged_with} unspecified {drug} offense",
-        "{charged_with} a controlled substance violation"
+        "{charged_with} a controlled substance violation",
         "{charged_with} a misdemeanor of {possessing} drug paraphernalia",
         "{charged_with} inhalation of vapors or volatile chemical",
     ],
@@ -116,7 +116,7 @@ categories = {
         "killed another person in an incident that remains unclear",
         "responsible for an accidental death without clear intent",
         "involved in a fatal situation where cause was uncertain",
-        "killed person in unclear circumstances"
+        "killed person in unclear circumstances",
         "{charged_with} manslaughter, felony",
     ],
     "Intimidation (Not Witness)": [
@@ -181,7 +181,7 @@ categories = {
         "{intimidating} a key witness in a criminal case",
         "attempted to suborn perjury by intimidation",
         "forced a witness to provide misleading statements",
-        "accused of {intimidating} a witness into non-cooperation"
+        "accused of {intimidating} a witness into non-cooperation",
     ],
     "Extortion": [
         "{charged_with} extortion",
@@ -207,7 +207,7 @@ categories = {
         "threatened property damage in exchange for ransom",
         "attempted to extort a wealthy {victim}",
         "threatened public exposure of embarrassing details for {financial_gain}",
-        "extracted money through repeated threats of violence"
+        "extracted money through repeated threats of violence",
     ],
     "Burglary": [
         "{charged_with} burglary",
@@ -310,7 +310,7 @@ categories = {
         "took a package from someone's porch {without} permission",
         "{charged_with} petty theft after taking a bicycle from a park",
         "{charged_with} theft of services",
-        "{charged_with} intent to obtain transportation without paying"
+        "{charged_with} intent to obtain transportation without paying",
         "{failure to} pay for a taxi fare",
         "theft by taking over ${numeric_quantity} and under ${numeric_quantity}",
         "{charged_with} theft under ${numeric_quantity} at a {place}",
@@ -352,7 +352,7 @@ categories = {
         "{possessing} tools for breaking and entering",
         "{possessing} instruments of a crime",
         "{charged_with} possession of instrument of crime",
-        "{charged_with} possession of burglar's implements"
+        "{charged_with} possession of burglar's implements",
         "{possessing} shoplifting gear",
     ],
     "Property Damage": [
@@ -368,7 +368,7 @@ categories = {
         "caused damage to {place} worth $300",
         "spraying graffiti",
         "{charged_with} possession of graffiti items",
-        "{severe} damage to property"
+        "{severe} damage to property",
         "fiddling with someone else's {vehicle_part}",
         "tampering with another {motor_vehicle}",
         "{charged_with} damaging a {vehicle_part}",
@@ -400,14 +400,14 @@ categories = {
         "{failure to} appear before court",
         "{charged_with} {failure to} make a court appearance",
         "{failure to} appear for booking or processing",
-        "{failure to} appear on felony offense"
+        "{failure to} appear on felony offense",
         "being in contempt of court",
         "contempt of court",
         "{failure to} appear on bond",
         # Registration
         "{failure to} register",
-        "{failure to} comply with sexual offender registration"
-        "predatory offender who knowingly violates registration"
+        "{failure to} comply with sexual offender registration",
+        "predatory offender who knowingly violates registration",
         "{failure to} notify about address change",
         "{failure to} verify current address",
         "{failure to} register as a sex offender",
@@ -424,9 +424,9 @@ categories = {
         "{charged_with} violation of order of protection",
         "{charged_with} being a community custody violator",
         "{charged_with} violation of civil protection order, felony",
-        "{charged_with} violation of temporary protection order"
-        "{charged_with} being a community custody or service violator"
-        "{charged_with} violation of parks recreation and community service"
+        "{charged_with} violation of temporary protection order",
+        "{charged_with} being a community custody or service violator",
+        "{charged_with} violation of parks recreation and community service",
         "{failure to} comply with a restraining order issued by the court",
         "attempted to influence a witness in violation of court directives",
         "skipped scheduled drug testing mandated by the court",
@@ -464,10 +464,11 @@ categories = {
         "{charged_with} causing a noise violation",
         "{improper} nudity disturbing passersby",
         "{charged_with} public indecency",
-        "{charged_with} indecent exposure"
+        "{charged_with} indecent exposure",
         "engage or maintain nuisance",
         "{charged_with} making harassing phone calls to a member of the public",
         "harassing phone calls",
+        "{charged_with} voyeurism",
         # Court Edge Case
         "{charged_with} causing a {disturbance} in a court of law",
         "{harassing} a judge or jury member",
@@ -486,7 +487,7 @@ categories = {
     ],
     "Breaking Urban Rules": [
         # Breaking urban rules
-        "{failure to} to pay public transportation fare"
+        "{failure to} to pay public transportation fare",
         "{failure to} pay fare on the bus",
         "attempted to evade paying transit fare",
         "{charged_with} pedestrian violation",
@@ -605,7 +606,7 @@ categories = {
         "{improper} distribution of items in a {prison} which are not drugs",
         "selling {improper} contraband in a {prison} but not {drug}",
         "{conspiracy_to} convey {improper} items in a {prison} that are not drugs",
-        "{conspiracy_to} provide {improper} object to an inmate - felony"
+        "{conspiracy_to} provide {improper} object to an inmate - felony",
         "{charged_with} contraband introduction {minor_degree_level}",
         "{charged_with} bringing {improper} items into a {prison}, misdemeanor",
         "inmate {possessing} tobacco, electronics or a phone",
@@ -650,7 +651,7 @@ categories = {
         "{conspiracy_to} offer sex acts",
         "{improper} pimping",
         "{charged_with} operating a prostitution business",
-        "{charged_with} operating a {improper} brothel"
+        "{charged_with} operating a {improper} brothel",
         "{conspiracy_to} sell immoral services",
         "{charged_with} selling alcohol without a license",
         "{conspiracy_to} start an {improper} alcohol distribution business",
@@ -760,7 +761,7 @@ categories = {
         "unplanned but intentional act causing death",
         "{charged_with} lethally harmed {victim} during a {fight}",
         "offense of killing someone in an emotional rage",
-        "accused of manslaughter for a sudden deadly action"
+        "accused of manslaughter for a sudden deadly action",
     ],
     "Vehicular Manslaughter": [
         "caused a fatal accident while driving recklessly",
@@ -782,7 +783,7 @@ categories = {
         "unintentional killing with a {motor_vehicle}",
         "struck a {victim} in a crosswalk causing fatal injuries",
         "indicted for vehicular manslaughter in a {place}",
-        "accidentally ended {victim}'s life with reckless operation"
+        "accidentally ended {victim}'s life with reckless operation",
     ],
     "Negligent Manslaughter": [
         "caused death by failing to follow safety precautions",
@@ -804,7 +805,7 @@ categories = {
         "unintentional killing tied to disregard for safety",
         "{charged_with} failing to prevent hazards resulted in a death",
         "did not foresee obvious risks leading to fatality",
-        "neglected standard safety protocols, causing fatal outcome"
+        "neglected standard safety protocols, causing fatal outcome",
     ],
     "Kidnapping": [
         "false imprisonment of a {victim}",
@@ -850,7 +851,7 @@ categories = {
         "abused a child physically but not sexually",
         "{charged_with} physically harming a child but not sexually",
         "{charged_with} neglect of a dependent",
-        "{charged_with} cruelty to children"
+        "{charged_with} cruelty to children",
         "{charged_with} injury to a child",
         "endangering the welfare of a {minor} {minor_degree_level}",
         # Assault edge case
@@ -893,9 +894,9 @@ categories = {
         "lewd acts upon a {minor}",
         "carnal knowledge of a {minor}",
         "indecent liberties with a {minor}",
-        "{charged_with} enticing a {minor}"
+        "{charged_with} enticing a {minor}",
         # Edge case
-        "{charged_with} lewd or lascivious  conduct, felony "
+        "{charged_with} lewd or lascivious  conduct, felony",
         "{charged_with} offensive touching",
         "{charged_with} trafficking for sexual servitude - felony",
     ],
@@ -921,7 +922,7 @@ categories = {
         "{charged_with} {inflicted} {severe} injury leading to long-term damage",
         "{assault} causing bodily injury requiring emergency treatment",
         "assault {inflicted} {severe} harm and {severe} injuries",
-        "{assault} resulted in severe bodily trauma needing intensive care unit treatment"
+        "{assault} resulted in severe bodily trauma needing intensive care unit treatment",
         "{inflicted} {severe} injury requiring hospitalization",
         "{minor_degree_level} {assault} causing bodily injury",
         "{assault} in the {minor_degree_level} still {inflicted} minor injury",
@@ -932,7 +933,7 @@ categories = {
         "used a {weapon} to seriously wound a person",
         "{severe} aggravated {assault} using a {weapon}",
         "{severe} aggravated {assault} using a {firearm}",
-        "{charged_with} {assault} with a deadly {weapon} at {place}"
+        "{charged_with} {assault} with a deadly {weapon} at {place}",
         "{minor_degree_level} {assault} using a {weapon}",
         "batter by use of a {weapon}",
         # Choking
@@ -959,7 +960,7 @@ categories = {
         "simple {assault}",
         "{assault}",
         "{charged_with} {assault} as a misdemeanor",
-        "{charged_with} {assault} that was not {severe}"
+        "{charged_with} {assault} that was not {severe}",
         "{assault} {without} bodily harm",
         "{charged_with} domestic abuse",
         "{assault} on {family_member}",
@@ -1038,7 +1039,7 @@ categories = {
         "attempted to purchase a {firearm} illegally",
         "{charged_with} possession of high-capacity magazines in violation of the law",
         "{charged_with} failure to report a lost or stolen {weapon}",
-        "{charged_with} unlawful sale of ammunition"
+        "{charged_with} unlawful sale of ammunition",
         "{charged_with} {improper} sale of ammunition",
         "{improper} weapons trafficking",
         "{conspiracy_to} commit misconduct with weapons",
@@ -1109,7 +1110,7 @@ categories = {
         "skipped out on the accident scene leaving injuries behind",
         "absconded immediately after harming a {victim}",
         "hit {victim} near {place} and didn't stop",
-        "recklessly caused harm in an accident before fleeing the site"
+        "recklessly caused harm in an accident before fleeing the site",
     ],
     "Other Violent Offense": [
         "{reckless} endangerment",
@@ -1135,7 +1136,7 @@ categories = {
         "causing unnecessary danger to others at a {place}",
         "{charged_with} throwing an object at a train",
         "{severe} terrorism",
-        "{charged_with} street terrorism"
+        "{charged_with} street terrorism",
         "criminal {disturbance} that endangers the public",
     ],
     "Arson": [
@@ -1254,7 +1255,7 @@ categories = {
         "{charged_with} unauthorized utilization of a stolen access device to get goods worth ${numeric_quantity}",
         "{charged_with} use of access account information without consent",
         "giving false information with intent to be another actual person, misdemeanor",
-        "misuse of {identification}"
+        "misuse of {identification}",
     ],
     "Embezzlement": [
         "{charged_with} embezzlement",
@@ -1383,6 +1384,7 @@ categories = {
         "{improper} giving of fictitious information to an {officer}, misdemeanor",
         "{charged_with} giving a false crime report",
         "making a false report of a violation of the criminal code",
+        "{charged_with} perjury",
         # Fraud Edge Cases
         "{charged_with} making a false statement with no financial purpose",
         "{charged_with} making a false statement for no particular purpose",
@@ -1564,7 +1566,7 @@ categories = {
         "driver's insurance is {invalid} but not {fraudulent}",
         "{failure to} purchase a driver's license",
         # Larceny Edge case
-        "{charged_with} permitting unauthorized person to drive"
+        "{charged_with} permitting unauthorized person to drive",
         # Public Order Edge Case
         "{failure to} produce insurance {identification}",
     ],
@@ -1594,7 +1596,7 @@ categories = {
         "{charged_with} operating a {motor_vehicle} with the driver drinking from an open container",
         "{motor_vehicle} operator {possessing} an open container",
         "{motor_vehicle} operator {possessing} an alcoholic container which is not closed",
-        "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger"
+        "{motor_vehicle} operator {possessing} an alcoholic container which does not belong to the passenger",
         "driving while {under_the_influence} with a {minor} in the {motor_vehicle}",
         "driving while {under_the_influence} with {family_member} in the {motor_vehicle}",
         "driving while {under_the_influence} with a {minor_degree_level} aggravating factor",
