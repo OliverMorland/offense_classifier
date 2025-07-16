@@ -1053,6 +1053,7 @@ categories = {
         "felon {possessing} a {weapon} in a {prison}",
         # DUI edge case
         "{improper} handling of a {firearm} in a {motor_vehicle}",
+        "{charged_with} possessing a loaded {firearm} while {under_the_influence}",
         # Drug Possession Edge Case
         "felon or addict {possessing} a {firearm}",
     ],
@@ -1165,8 +1166,10 @@ categories = {
         # General fraud
         "defrauded a {victim} out of money through false promises",
         "fraud",
+        "forgery in the {minor_degree_level}",
         "{conspiracy_to} commit fraud",
         "defrauded a {victim}",
+        "{charged_with} forgery",
         "{charged_with} retail fraud",
         "{charged_with} falsification",
         "{charged_with} mail fraud",
@@ -1175,6 +1178,7 @@ categories = {
         "{charged_with} money laundering",
         "{charged_with} {severe} money laundry",
         "{charged_with} fraudulently obtaining food or lodging",
+        "{charged_with} {improper} patient brokering",
         # Using a stolen card
         "{charged_with} fraudulent use of a {payment_card}",
         "{improper} use of {payment_card} under $1,500",
@@ -1219,6 +1223,7 @@ categories = {
         "{improper} theft of check",
         "{charged_with} theft of check of a {victim}",
         "{charged_with} using checks with insufficient funds",
+        "{charged_with} forgery by passing",
         # Theft by deception
         "{charged_with} theft by {deception}",
         "theft with {deception}",
