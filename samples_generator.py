@@ -371,11 +371,13 @@ categories = {
         "{severe} damage to property",
         "fiddling with someone else's {vehicle_part}",
         "tampering with another {motor_vehicle}",
+        "{severe} tampering with a {motor_vehicle}, felony",
         "{charged_with} damaging a {vehicle_part}",
         "malicious injury to property under $ 1000",
         "malicious destruction of police property",
         "owner or tenant's {failure to} keep property clean",
-        "{charged_with} tampering with property of a {victim}",
+        "{severe} criminal damage, first degree",
+        "{charged_with} tampering with property of a {victim}, {minor_degree_level}",
         "{hit} an unattended {motor_vehicle}",
         "{charged_with} assault on property",
         # Leaving the scene of accident
@@ -479,6 +481,7 @@ categories = {
         "{charged_with} participating in a street gang",
         "{improper} gang activity",
         "{charged_with} engaging in organized criminal activity",
+        "{charged_with} contributing to the delinquency of a {minor}",
         # Noisiness
         "{charged_with} shouting too loudly by the {place}",
         "playing loud music by a {place}",
