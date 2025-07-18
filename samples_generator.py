@@ -406,7 +406,8 @@ categories = {
         "{failure to} appear for booking or processing",
         "{failure to} appear on felony offense",
         "being in contempt of court",
-        "contempt of court",
+        "contempt of court in the {minor_degree_level}",
+        "criminal contempt in the {minor_degree_level}",
         "{failure to} appear on bond",
         # Registration
         "{failure to} register",
@@ -415,6 +416,7 @@ categories = {
         "{failure to} notify about address change",
         "{failure to} verify current address",
         "{failure to} register as a sex offender",
+        "sexual predator {failure to} report to register",
         "{charged_with} not registering as a sex offender",
         # Failure to pay
         "{failure to} pay court-mandated fines on time",
@@ -422,23 +424,17 @@ categories = {
         "not paying bail as agreed in court",
         "bail jumping",
         # Court Order Violations
-        "not abiding by court order",
-        "contempt of court order",
-        "{charged_with} violation of no contact order",
-        "{charged_with} violation of order of protection",
-        "{charged_with} being a community custody violator",
-        "{charged_with} violation of civil protection order, felony",
-        "{charged_with} violation of temporary protection order",
-        "{charged_with} being a community custody or service violator",
-        "{charged_with} violation of parks recreation and community service",
-        "{failure to} comply with a restraining order issued by the court",
-        "attempted to influence a witness in violation of court directives",
-        "skipped scheduled drug testing mandated by the court",
-        "{charged_with} {failure to} comply with court order",
-        "{charged_with} {failure to} comply with a protective order",
+        "not abiding by {court_order}",
+        "contempt of {court_order}",
+        "criminal contempt of {court_order}",
+        "{court_order} violator",
+        "violation of {court_order}",
+        "violating {court_order} {minor_degree_level}",
+        "violation of {court_order}, felony",
+        "{failure to} comply with {court_order}",
+        "{failure to} to take scheduled drug testing mandated by the court",
         "disregarded court order to stay away from a victim",
-        "violated terms of probation by missing check-ins",
-        "criminal contempt of a domestic violence protective order",
+        "{charged_with} violating {court_order} by missing check-ins",
         "{failure to} check in with a parole officer as required",
     ],
     "Non Support": [
@@ -1733,6 +1729,11 @@ placeholder_options = {
     "harassing": ["harassing", "annoying", "bothering", "disturbing", "molesting", "pestering", "shouting insults at",
                   "screaming obscenities at", "taunting", "abusing verbally", "yelling profanities at"],
     "schedule_drug": ["schedule 1", "schedule 2", "schedule 3", "schedule 4", "schedule 5", "schedule 6"],
+    "court_order" : ["court order", "court ruling", "no contact protective order", "restraining order",
+                     "order of protection", "parks recreation and community service", "community service order",
+                     "temporary protection order", "no contact order", "protection order",
+                     "community custody or service", "domestic violence protective order",
+                     "terms of probation", "conditions of release"]
 }
 
 
