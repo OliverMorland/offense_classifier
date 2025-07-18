@@ -280,14 +280,12 @@ categories = {
     "Larceny": [
         # General Property Theft
         "{conspiracy_to} commit larceny",
-        "petty theft",
-        "misdemeanor theft",
-        "retail theft",
-        "{charged_with} theft",
+        "petty {larceny}",
+        "misdemeanor {larceny}",
+        "retail {larceny}",
         "{charged_with} theft by receiving",
         "received stolen {stolen_property}",
-        "{charged_with} theft",
-        "{charged_with} larceny",
+        "{charged_with} {larceny}",
         "grand theft in the {minor_degree_level}",
         "{improper} taking",
         # Possessing stolen property
@@ -303,13 +301,13 @@ categories = {
         "took an unattended bag from a table at {place}",
         "pick pocketed {stolen_property} from a shopper",
         "{charged_with} retail theft after taking {stolen_property} from {place}",
-        "{charged_with} theft of united states mail",
+        "{charged_with} {larceny} of united states mail",
         "removed security tags from {stolen_property} and walked out of the store",
         "{charged_with} shoplifting after concealing items in clothing, misdemeanor",
         "{charged_with} grand theft for stealing high-value {stolen_property}",
         "took a package from someone's porch {without} permission",
         "{charged_with} petty theft after taking a bicycle from a park",
-        "{charged_with} theft of services",
+        "{charged_with} {larceny} of services",
         "{charged_with} intent to obtain transportation without paying",
         "{failure to} pay for a taxi fare",
         "theft by taking over ${numeric_quantity} and under ${numeric_quantity}",
@@ -330,7 +328,9 @@ categories = {
         "found with stolen {stolen_property} but did not covert it for {financial_gain}",
         "stole a {payment_card} but did not use it",
         # Edge Cases
-        "{charged_with} theft of a {firearm}",
+        "{charged_with} {larceny} of a {firearm}",
+        "stealing a {firearm} from a {place}, felony",
+        "{larceny} of {livestock}",
     ],
     "Trespass": [
         # Trespass
@@ -1734,7 +1734,9 @@ placeholder_options = {
                      "order of protection", "parks recreation and community service", "community service order",
                      "temporary protection order", "no contact order", "protection order",
                      "community custody or service", "domestic violence protective order",
-                     "terms of probation", "conditions of release"]
+                     "terms of probation", "conditions of release"],
+    "larceny" : ["larceny", "theft", "stealing", "theft"],
+    "livestock" : ["livestock", "cattle", "farm animals", "goats"],
 }
 
 
