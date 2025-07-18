@@ -1325,6 +1325,7 @@ categories = {
         "{failure to} stop driving at command of law enforcement",
         "{failure to} to stop when {officer} signals",
         "stop required on signal of {officer}",
+        "{failure} to return to lawful detention",
         # Edge case
         "{charged_with} evading arrest with endangerment",
         "fugitive from justice",
