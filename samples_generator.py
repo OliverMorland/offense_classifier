@@ -423,6 +423,7 @@ categories = {
         "{failure to} pay court ordered restitution",
         "not paying bail as agreed in court",
         "bail jumping",
+        "capias pro fine",
         # Court Order Violations
         "not abiding by {court_order}",
         "contempt of {court_order}",
