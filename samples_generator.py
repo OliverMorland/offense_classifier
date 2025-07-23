@@ -219,6 +219,7 @@ categories = {
         "forced entry into a building to take {stolen_property}",
         "{improper} entry into a {motor_vehicle}",
         "breaking and entering a {motor_vehicle} by a {place}",
+        "breaking and entering {motor_vehicle} with damage to vehicle",
         "{charged_with} forcing entry into a {motor_vehicle}",
         "{charged_with} entering a {motor_vehicle} with intent to commit theft",
         "{improper} entry into a building",
@@ -1325,7 +1326,7 @@ categories = {
         "{failure to} stop driving at command of law enforcement",
         "{failure to} to stop when {officer} signals",
         "stop required on signal of {officer}",
-        "{failure} to return to lawful detention",
+        "{failure to} return to lawful detention",
         # Edge case
         "{charged_with} evading arrest with endangerment",
         "fugitive from justice",
@@ -1490,6 +1491,7 @@ categories = {
         "{charged_with} exhibition driving",
         "{charged_with} driving on a divided highway - restricted access",
         "{severe} driving violation",
+        "{charged_with} limitations on overtaking on the left",
     ],
     "Traffic Vehicle": [
         "inoperable license tag light",
@@ -1525,6 +1527,7 @@ categories = {
         "{motor_vehicle} {vehicle_part} required",
         "{failure to} dim lights",
         "{failure to} ensure passenger in all terrain vehicle has headgear",
+        "{motor_vehicle} driving without security",
     ],
     "Traffic Paperwork": [
         "{charged_with} driving under a {invalid} licence",
@@ -1577,6 +1580,7 @@ categories = {
         "operators and chauffeurs must have be licensed",
         "{charged_with} violation of temporary instruction permit",
         # DUI Edge cases
+        "driving a {motor_vehicle} while suspended",
         "driving under a {invalid} license due to driving {under_the_influence}",
         "driving under a {invalid} license due to failure to appear",
         "{invalid} driver's license, revoked because of {under_the_influence} driving",
@@ -1738,6 +1742,7 @@ placeholder_options = {
                      "terms of probation", "conditions of release"],
     "larceny" : ["larceny", "theft", "stealing", "theft"],
     "livestock" : ["livestock", "cattle", "farm animals", "goats"],
+    "driving" : ["driving", "operating", "driving", "operating", "steering"],
 }
 
 
