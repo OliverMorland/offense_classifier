@@ -9,6 +9,7 @@ import os
 from datasets import load_from_disk
 import ast
 import csv
+from offense_classifier_end_to_end.config import FUNNEL_MAPPING, ALL_OTHER_OFFENSE_CLUES
 
 
 def load_data(file_path):
@@ -23,11 +24,13 @@ def load_data(file_path):
 
 
 class OffenseClassifier:
-    def __init__(self, model_dir="offense_classifier_end_to_end/model"):
+
+    def __init__(self, model_dir=os.path.join(os.path.dirname(__file__), "model")):
         """
         Initialize the Offense Classifier with end-to-end fine-tuning and GPU support.
         """
         print("Initializing Offense Classifier...")
+        self.script_dir = os.path.dirname(__file__)
         self.model = None
         self.tokenizer = None
         self.encoded_dataset = None
@@ -43,14 +46,14 @@ class OffenseClassifier:
 
     def load_tokenizer(self):
         if self.tokenizer is None:
-            model_name = "offense_classifier_end_to_end/distilbert_base_uncased/"
+            model_name = os.path.join(self.script_dir, "distilbert_base_uncased/")
             self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
 
     def prepare_data(self):
         if self.encoded_dataset is not None:
             return
         # Load data
-        file_path = "offense_classifier_end_to_end/datasets/samples.csv"
+        file_path = os.path.join(self.script_dir, "datasets/samples.csv")
         texts, labels, self.label_mapping = load_data(file_path)
 
         # Split data into training and testing sets
@@ -68,7 +71,7 @@ class OffenseClassifier:
             return self.tokenizer(batch['text'], padding='max_length', truncation=True, max_length=128)
 
         # Tokenize datasets
-        cache_path = "offense_classifier_end_to_end/cache/encoded_dataset"
+        cache_path = os.path.join(self.script_dir, "cache/encoded_dataset")
         if os.path.exists(cache_path):
             print("Loading tokenized dataset from cache...")
             encoded_dataset = load_from_disk(cache_path)
@@ -107,7 +110,8 @@ class OffenseClassifier:
         # Training arguments
         training_args = TrainingArguments(
             output_dir='./results',
-            evaluation_strategy="epoch",
+            # evaluation_strategy="epoch",
+            eval_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,
             per_device_train_batch_size=8,
@@ -164,18 +168,7 @@ class OffenseClassifier:
         print("\nClassification Report:\n", report)
 
     def funnel_category(self, input_category):
-        dictionary = {
-            'Public Order': ["Resisting Arrest", "Illicit Business", "Obstructing Justice",
-                             "Public Institution Violation", "Public Intoxication", "Disorderly Conduct",
-                             "Breaking Urban Rules"],
-            'Traffic': ["Traffic Driving", "Traffic Vehicle", "Traffic Paperwork"],
-            'Larceny/Motor Vehicle Theft': ["Larceny", "Motor Vehicle Theft"],
-            'All Other Offenses': ["Underage Offense", "Non-Drug Illicit Items", "Ambiguous Offense",
-                                   "Recreational Violation"],
-            'Fraud': ["Identity Theft", "Fraud"],
-            'Court Violation': ["Court Violation", "Non Support"],
-            'Other Property': ["Property Damage", "Trespass"],
-        }
+        dictionary = FUNNEL_MAPPING
         for key, categories in dictionary.items():
             for category in categories:
                 if input_category.lower() == category.lower():
@@ -183,10 +176,7 @@ class OffenseClassifier:
         return input_category
 
     def should_classify_to_all_other_offense(self, input_text):
-        clues = ["parties", "habitual violator",
-                 "expulsion", "attempt to commit an offense",
-                 "unknown offense", "enterprise corruption", "accessory after the fact",
-                 "disturbing a school function", "runaway"]
+        clues = ALL_OTHER_OFFENSE_CLUES
         for clue in clues:
             if clue in input_text.lower():
                 return True
@@ -274,8 +264,9 @@ def create_new_row_data(row, offense_labels, is_correct):
 if __name__ == "__main__":
     classifier = OffenseClassifier()
 
-    input_file = "offense_classifier_end_to_end/test_sheet.csv"
-    output_file = "offense_classifier_end_to_end/test_sheet_results.csv"
+    script_dir = os.path.dirname(__file__)
+    input_file = os.path.join(script_dir, "test_sheet.csv")
+    output_file = os.path.join(script_dir, "test_sheet_results.csv")
     # input_file = "test_sheet.csv"
     # output_file = "test_sheet_results.csv"
 
