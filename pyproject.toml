@@ -37,9 +37,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/OliverMorland/phrase_classifier." # Link to your Git repo
+Homepage = "https://github.com/OliverMorland/offense_classifier" # Link to your Git repo
 Documentation = "https://your-docs-site.com/offense_classifier" # Optional
-Source = "https://github.com/OliverMorland/phrase_classifier.git"
+Source = "https://github.com/OliverMorland/offense_classifier.git"
 
 # Optional: Configuration for Setuptools to find packages
 # This is useful if your package structure is more complex or if you use `src` layout.
