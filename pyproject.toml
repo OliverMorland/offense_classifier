@@ -1,0 +1,60 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"] # Using setuptools as the build backend
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offense_classifier" # The name others will use to import your package
+version = "0.1.0"           # Start with 0.1.0 and increment for releases
+description = "A Python package for classifying text into categories."
+readme = "README.md"        # Path to your README file (create if it doesn't exist)
+requires-python = ">=3.10"   # Minimum Python version required
+license = { text = "MIT License" } # Or your chosen license (e.g., file = "LICENSE")
+authors = [
+  { name = "Oliver Morland", email = "omorland@swingtech.com" },
+]
+keywords = ["classification", "NLP", "classifying text"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha", # Choose appropriate status
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "datasets>=3.6.0",
+    "huggingface-hub>=0.33.2",
+    "safetensors>=0.5.3",
+    "scikit-learn>=1.7.0",
+    "scipy>=1.16.0",
+    "tokenizers>=0.21.2",
+    "torch>=2.7.1",
+    "transformers>=4.53.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/OliverMorland/phrase_classifier." # Link to your Git repo
+Documentation = "https://your-docs-site.com/offense_classifier" # Optional
+Source = "https://github.com/OliverMorland/phrase_classifier.git"
+
+# Optional: Configuration for Setuptools to find packages
+# This is useful if your package structure is more complex or if you use `src` layout.
+# For a simple direct layout like 'offense_classifier/__init__.py', this might not be strictly needed,
+# as setuptools often auto-discovers. But it's good practice to be explicit.
+[tool.setuptools.packages.find]
+# If your code is directly in 'offense_classifier/' at the root of the repo:
+where = ["."] # Search in the current directory
+
+# If you prefer the 'src' layout (e.g., offense_classifier_repo/src/offense_classifier/):
+# where = ["src"] # You would move your offense_classifier folder into a 'src' folder
+
+# [tool.setuptools.package-data] # If you have non-Python files to include (e.g., config, data)
+# offense_classifier = ["*.json", "data/*.txt"] # Example
+
+# Optional: Add any other tool configurations (e.g., Black, Mypy)
+[tool.black]
+line-length = 100
